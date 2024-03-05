@@ -28,7 +28,7 @@ p,a,button{
 
 header::before {
     height: 750px;
-    background-image: url(/assets/img/aboutme/eu-bg.jpg);
+    background-image: url(../../../assets/img/aboutme/eu-bg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -64,7 +64,7 @@ header::before {
 }
 
 .bg-mid{
-    background-image: url(/assets/img/aboutme/eu-mid-bg.png);
+    background-image: url(../../../assets/img/aboutme/eu-mid-bg.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
