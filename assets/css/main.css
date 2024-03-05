@@ -610,7 +610,7 @@ footer {
   }
 
   .mb-desktop-100{
-    margin-bottom: 100px;
+    margin-bottom: 100px  !important;
   }
   
   .mt-desktop-120{
