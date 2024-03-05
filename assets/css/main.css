@@ -1,0 +1,695 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:target {
+  scroll-margin-top: 0.8em;
+}
+
+#back-to-top {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Tiffany Times New Roma";
+  src: url("/assets/fontes/times-new-roman.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Armani Bodoni";
+  src: url("/assets/fontes/didot-1.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Armani Bodoni";
+  src: url("/assets/fontes/didot-lt-std-roman.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Panerai Copperplate";
+  src: url("/assets/fontes/OPTICopperplate.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --main-color: #232323;
+  --ton-white-1: #ffffff;
+  --ton-white-2: #fafafa;
+  --main-color-black: #232323;
+  --ton-black-1: #252b42;
+  --ton-black-2: #000000;
+  --ton-black-3: #a3a7b4;
+  --ton-black-4: #737373;
+  --ton-yellow-1: #63501b;
+  --ton-yellow-2: #0c0c00;
+  --ton-yellow-3: #6e5918;
+  --ton-border-1: #dedede;
+  --ton-border-2: #c1c1c1;
+  --second-color: #737373;
+  --gradient-fisrst: #d71489;
+  --gradient-second: #004788;
+  --background-form: #f9f9f9;
+  --transform-temp1: -45deg;
+  --transform-temp2: 45deg;
+  --fonte-principal: "Nothing You Could Do", "cursive";
+  --fonte-secundaria: "Playfair Display", serif;
+  --fonte-aux-primaria: "Rock Salt", "cursive";
+  --fonte-aux-secundaria: "Roboto Condensed", sans-serif;
+  --fonte-corrida: "Poppins", sans-serif;
+  --fonte-tiffany: "Tiffany Times New Roma", sans-serif;
+  --fonte-armani: "Armani Bodoni", sans-serif;
+  --fonte-panerai: "Panerai Copperplate", sans-serif;
+}
+
+body{
+  font-family: var(--fonte-secundaria);
+}
+
+body p{
+  font-family: var(--fonte-corrida);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-start {
+  align-items: flex-start !important;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.text-off {
+  color: #848484;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.d-hidden {
+  display: none;
+}
+
+button.fantasma-off {
+  border: 1px solid #ced4da;
+}
+
+button.fantasma-on {
+  background-color: #000;
+  color: #fff;
+}
+
+.text-pink {
+  color: #ff1178;
+}
+
+.banner-index {
+  padding-top: 67px;
+}
+
+.mt-100{
+  margin-top: 100px !important;
+}
+
+.mt-50{
+  margin-top: 50px !important;
+}
+
+.mt-20{
+  margin-top: 20px !important;
+}
+
+.mt-40{
+  margin-top: 40px !important;
+}
+
+.ml-20{
+  margin-left: 20px;
+}
+
+.pt-5{
+  padding-top: 5px;
+}
+
+.pt-12{
+  padding-top: 12px;
+}
+
+.pt-20{
+  padding-top: 20px;
+}
+
+.pt-40{
+  padding-top: 40px;
+}
+
+.pl-20{
+  padding-left: 20px;
+}
+
+.pb-5{
+  padding-bottom: 5px;
+}
+
+.pb-12{
+  padding-bottom: 12px;
+}
+
+.pb-20{
+  padding-bottom: 20px;
+}
+
+.pb-100{
+  padding-bottom: 100px;
+}
+
+.mb-12{
+  margin-bottom: 12px;
+}
+
+.mb-20{
+  margin-bottom: 20px;
+}
+
+.mb-40{
+  margin-bottom: 40px;
+}
+
+.mb-50{
+  margin-bottom: 50px;
+}
+
+.mb-100{
+  margin-bottom: 100px;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-start{
+  text-align: start;
+}
+
+.text-end{
+  text-align: end;
+}
+
+.dropdown > div:first-child {
+  cursor: pointer;
+}
+
+.drop-brand .sinal-de-menos,
+.drop-brand .sinal-de-mais {
+  position: absolute;
+  right: 0;
+}
+
+.drop-brand:not(.toggle-drop) .sinal-de-mais {
+  opacity: 1;
+}
+
+.drop-brand:not(.toggle-drop) .sinal-de-menos {
+  opacity: 0;
+  -webkit-transition: opacity 1s cubic-bezier(0.7, 0, 0.2, 1);
+  -moz-transition: opacity 1s cubic-bezier(0.7, 0, 0.2, 1);
+  transition: opacity 1s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.toggle-drop > .sinal-de-menos {
+  opacity: 1;
+  -webkit-transition: opacity 1s cubic-bezier(0.7, 0, 0.2, 1);
+  -moz-transition: opacity 1s cubic-bezier(0.7, 0, 0.2, 1);
+  transition: opacity 1s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.toggle-drop > .sinal-de-mais {
+  opacity: 0;
+  -webkit-transition: opacity 1s cubic-bezier(0.7, 0, 0.2, 1);
+  -moz-transition: opacity 1s cubic-bezier(0.7, 0, 0.2, 1);
+  transition: opacity 1s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.fillcase .logo path {
+  fill: var(--fillcase, #000000);
+  stroke: var(--fillcase, #000000);
+}
+
+#header .header-container:not(.header-fixed) .container-header {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(4.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* ============================================= CURSOR =============================================*/
+
+.cursor {
+  position: absolute;
+  background: #50c878;
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  z-index: 10;
+  transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+    0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
+  -webkit-transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+    0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
+  -moz-transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+    0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
+  -ms-transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+    0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
+  -o-transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+    0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
+  user-select: none;
+  pointer-events: none;
+  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+}
+
+.cursor::before {
+  z-index: 10;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  background-image: url(../img/index/hover-card.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  opacity: 0;
+}
+
+.cursor::after {
+  z-index: 10;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  opacity: 1;
+  box-shadow: 2px 0px 3px 1px #50c87833;
+  transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+    0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
+  border-radius: 50%;
+}
+
+.cursor-on.active::before {
+  background-image: url(../img/index/hover-em-breve.svg);
+}
+
+.cursor-follower:not(.arrowup) {
+  opacity: 1;
+  transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
+}
+
+.cursor-follower.arrowup {
+  opacity: 0;
+  animation: upperarrow 1s ease-in-out;
+  border-width: 2px !important;
+}
+
+.cursor.active {
+  opacity: 1;
+  transform: scale(12);
+  -webkit-transform: scale(12);
+  -moz-transform: scale(12);
+  -ms-transform: scale(12);
+  -o-transform: scale(12);
+}
+
+.cursor.desk.active {
+  background-color: transparent !important;
+}
+
+.cursor.active::before {
+  opacity: 1;
+}
+
+.cursor-follower {
+  z-index: 10;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  background-color: transparent;
+  border: 0.5px solid #000000;
+  transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+    0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
+  -webkit-transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+    0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
+  -moz-transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+    0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
+  -ms-transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+    0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
+  -o-transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+    0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
+  user-select: none;
+  pointer-events: none;
+  transform: translate(4px, 4px);
+  -webkit-transform: translate(4px, 4px);
+  -moz-transform: translate(4px, 4px);
+  -ms-transform: translate(4px, 4px);
+  -o-transform: translate(4px, 4px);
+}
+
+.cursor-follower.active {
+  opacity: 0.3;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+}
+
+/* ============================================= DROPDOWN =============================================*/
+
+.content-dropdown:not(.active) {
+  overflow: auto;
+  transition: height 50s ease-in-out;
+}
+
+.content-dropdown.active {
+  overflow: hidden;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  transition: transform 5s ease-in-out;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition: animation, opacity 0.5s ease-in-out;
+}
+
+.content-dropdown.active {
+  -webkit-animation: display 1s ease-in-out;
+  animation: display 1s ease-in-out;
+}
+
+/* ============================================= ABRIRR =============================================*/
+
+.content-dropdown {
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  transition: 2s ease-in-out;
+}
+
+.content-dropdown.drop-slow p,
+.content-dropdown.drop-slow ul > li {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  animation: display2 0.9s ease-in-out;
+}
+
+.content-dropdown.active {
+  overflow: hidden;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  transition: transform 5s ease-in-out;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition: animation, opacity 0.5s ease-in-out;
+}
+
+.content-dropdown.active {
+  -webkit-animation: display 1s ease-in-out;
+  animation: display 1s ease-in-out;
+}
+
+.content-dropdown.active p:first-child {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  animation: display 1s ease-in-out;
+}
+
+.content-dropdown.active p:nth-child(2) {
+  opacity: 1;
+  animation: display 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.content-dropdown.active p:nth-child(3) {
+  opacity: 1;
+  animation: display 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.content-dropdown.active p:nth-child(4) {
+  opacity: 1;
+  animation: display 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.content-dropdown.active p:last-child {
+  opacity: 1;
+  animation: display 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.content-dropdown.active ul > li:nth-child(1) {
+  opacity: 1;
+  -webkit-animation: opacity, display 1s ease-in-out;
+  animation: display 1s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.content-dropdown.active ul > li:nth-child(2) {
+  opacity: 1;
+  -webkit-animation: opacity, display 1s ease-in-out;
+  animation: display 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.content-dropdown.active ul > li:nth-child(3) {
+  opacity: 1;
+  -webkit-animation: opacity, display 1s ease-in-out;
+  animation: display 1s ease-in-out;
+  transition: opacity 1.3s ease-in-out;
+}
+
+.content-dropdown.active ul > li:nth-child(4) {
+  opacity: 1;
+  -webkit-animation: opacity, display 1s ease-in-out;
+  animation: display 1s ease-in-out;
+  transition: opacity 1.6s ease-in-out;
+}
+
+.content-dropdown.active ul > li:nth-child(5) {
+  opacity: 1;
+  -webkit-animation: opacity, display 1s ease-in-out;
+  animation: display 1s ease-in-out;
+  transition: opacity 1.8s ease-in-out;
+}
+
+.content-dropdown.active ul > li:nth-child(6) {
+  opacity: 1;
+  -webkit-animation: opacity, display 1s ease-in-out;
+  animation: display 1s ease-in-out;
+  transition: opacity 2s ease-in-out;
+}
+
+footer {
+  padding-bottom: 15px;
+}
+
+@media only screen and (max-width: 900px) {
+  .desk {
+    display: none !important;
+  }
+
+  .mobile {
+    display: flex !important;
+  }
+
+  header > div,
+  main {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  footer {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .more-content > svg {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .desk {
+    display: flex !important;
+  }
+
+  .mobile {
+    display: none !important;
+  }
+
+  .mb-desktop-100{
+    margin-bottom: 100px;
+  }
+  
+  .mt-desktop-120{
+    margin-top: 120px !important;
+  }
+
+  .mb-desktop-150{
+    margin-bottom: 150px;
+  }
+
+  .pl-20-mobile{
+    padding-left: 20px;
+  }
+
+  .pl-70-mobile{
+    padding-left: 70px
+  }
+
+  .flex-column-reverse-mobile{
+    flex-direction: column-reverse;
+  }
+
+  .mt-20-mobile{
+    margin-top: 20px !important;
+  }
+}
+
+@keyframes display {
+  from {
+    margin-top: -20px;
+  }
+
+  to {
+    margin-top: initial;
+  }
+}
+
+@keyframes display2 {
+  from {
+    margin-top: -3px;
+    opacity: 0.8;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    transition: transform, opacity 0.5s linear;
+  }
+
+  to {
+    margin-top: -30px;
+    opacity: 0.4;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    transition: transform, opacity 0.5s linear;
+  }
+}
+
+@keyframes upperarrow {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.652);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(124, 124, 124);
+}

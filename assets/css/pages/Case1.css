@@ -1,0 +1,80 @@
+:root {
+    --cor-principalcase: #2e1437;
+    --cor-secundariacase: #cad1c3;
+    --fillcase: #FFFFFF;
+    --cor-border:#948e99;
+    --color-header: #fff;
+    --svg: url('../img/menu/Vecto-branco.svg');
+    --svg-2: url('../img/menu/Vecto-branco1.svg');
+    --svg-3: url('../img/menu/Vecto-branco2.svg');
+}
+
+
+.case-1.active::before{
+    background-image: url('https://placehold.co/300x300');
+}
+
+.case-2.active::before{
+    background-image: url("https://placehold.co/300x300");
+}
+
+body .header-container>nav>a:hover {
+    border-radius: 50%;
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+body .header-container>nav>a svg>path {
+    fill: #fff;
+}
+
+body .header-container>nav>a:hover svg>path {
+    fill: #000000;
+}
+
+.border-title-header-1{
+    color: #868E96;
+}
+
+body .fillcase .logo path {
+    fill: var(--cor-secundariacase, #000000);
+    stroke:var(--cor-secundariacase, #000000); ;
+}
+
+.container.cases-block-1 .border-title-header-2{
+    color: #FFFFFF;
+}
+
+.d-grid-banner-index-column-1>ul>li:not(.servicos) {
+    color: #EFF5FF;
+}
+
+.bg-color2{
+    background-color: var(--cor-secundariacase);
+}
+
+.text-nowrap{
+    color: #868E96;
+}
+
+.d-grid-banner-index-column-1>ul>li {
+    font-family: var(--fonte-corrida);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    letter-spacing: -0.03em;
+    color: #EFF5FF;
+}
+
+.cases-footer>.text-attention {
+    font-family: var(--fonte-corrida);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: -0.03em;
+    color: #FF1178;
+}

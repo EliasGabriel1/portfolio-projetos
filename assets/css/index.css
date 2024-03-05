@@ -1,0 +1,706 @@
+.banner-index>h1 {
+    font-family: var(--fonte-corrida);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: -0.03em;
+    color: #232323;
+}
+
+.letter-difference {
+    color: #FFF;
+    background-color: #232323;
+}
+
+.banner-index .banner-ico-index {
+    display: flex;
+    position: relative;
+    max-width: 90vw;
+}
+
+.banner-index .banner-ico-index>svg {
+    z-index: 2;
+}
+
+.banner-index .banner-ico-index>svg {
+    max-width: 1222px;
+    max-height: 220px;
+}
+
+.banner-index .banner-ico-index .banner-ico-circle {
+    position: absolute;
+    right: -20px;
+    z-index: 1;
+}
+
+.banner-index .banner-ico-index .banner-ico-circle>svg {
+    max-width: 225px;
+    max-height: 225px;
+}
+
+.banner-index .banner-ico-index .banner-ico-circle svg {
+    -webkit-animation: rotate-center 40s steps(30000, end) infinite both;
+    animation: rotate-center 40s steps(30000, end) infinite both;
+    will-change: animation;
+}
+
+/* MAIN */
+
+main {
+    margin-top: 109px;
+    padding-bottom: 100px;
+}
+
+main .content-about-tags {
+    max-width: 528.23px;
+}
+
+main .content-about-tags h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: -0.03em;
+    color: #232323;
+}
+
+section.about{}
+
+main .content-about-tags a {
+    display: flex;
+    align-items: center;
+}
+
+/* -------------------------------------------------- BRAND  ----------------------------------------------*/
+
+.jump.link{
+    font-family: var(--fonte-principal);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    font-size: 24px;
+    color: #212529;
+}
+
+.saber-mais-aboutme.link{
+    font-family: var(--fonte-corrida);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    font-size: 24px;
+    color: #212529;
+}
+
+p.jump{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    color: #323232;
+    font-family: var(--fonte-corrida);
+}
+
+section.container-projetos.container>h3 {
+    font-family: var(--fonte-principal);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 130%;
+    margin-bottom: 90px;
+}
+
+.todos-projetos{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+main .content-projetos>.grid-content-projetos .box-projetos {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .content-projetos>.grid-content-projetos .box-projetos img {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.content-about-tags>p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    color: #323232;
+    font-family: var(--fonte-corrida);
+}
+
+.content-about-tags>a>p {
+    font-family: var(--fonte-corrida);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: -0.03em;
+    color: #232323;
+}
+
+
+section.about>.more-content.svg-eliasgabemini {
+    max-width: 70%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section.about2>.more-content {
+    align-items: center;
+    justify-content: center;
+}
+
+section.about>.more-content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    max-width: 624px;
+}
+
+section.about>.more-content>hr {
+    height: 1px;
+    background: transparent;
+    border: 1px solid #E9ECEF;
+}
+
+section.about>.more-content .dropdown .drop-brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.content-dropdown>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.content-dropdown>ul>li {
+    display: flex;
+    align-items: center;
+    gap: 0 7px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -0.03em;
+    color: #323232;
+    font-family: var(--fonte-corrida);
+}
+
+
+.content-dropdown p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -0.03em;
+    color: #323232;
+    font-family: var(--fonte-corrida);
+}
+
+.content-dropdown>.content-text-p{
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+
+section.about>.more-content .dropdown>.drop-brand {
+    font-family: var(--fonte-principal);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    color: #212529;
+}
+
+.grid-content-box-projetos>.box-projetos {
+    position: relative;
+}
+
+.grid-content-box-projetos>.box-projetos> a{
+    position: relative;
+}
+
+.grid-content-box-projetos>.box-projetos>picture:first-child {
+    display: none;
+}
+
+.grid-content-box-projetos>.box-projetos figure {
+    width: 500px;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.grid-content-box-projetos>.box-projetos figure>img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    filter: blur(1.5px);
+}
+
+.grid-content-box-projetos>.box-projetos figure:hover>img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: blur(6px) brightness(0.9);
+}
+
+.grid-content-box-projetos>.box-projetos figure span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+    -webkit-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+    font-size: 32px;
+    line-height: 130%;
+    color: #FFF;
+}
+
+.grid-content-box-projetos>.box-projetos figure span.armani{
+    font-family: var(--fonte-armani);
+}
+
+.grid-content-box-projetos>.box-projetos figure span.tiffany{
+    font-family: var(--fonte-tiffany);
+}
+
+.grid-content-box-projetos>.box-projetos figure span.panerai{
+    font-family: var(--fonte-panerai);
+}
+
+.grid-content-box-projetos>.box-projetos figure:hover span{
+    opacity: 1;
+    -webkit-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+}
+
+main .content-projetos>.button.button--pan::before{
+    content: 'Ver todos os projetos';
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    color: black;
+}
+
+main .content-projetos>.button {
+    background: black;
+    color: #fff;
+    border-radius: 50px;
+    width: 256px;
+    height: 73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#header::before {
+    background-image: url(../img/index/bc_index.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1440px 800px;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 800px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    animation: fadeInOut 3.5s infinite;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 360px) {
+    .banner-index .banner-ico-index {
+        margin-top: 120px;
+    }
+
+    .banner-index h1 {
+        padding-bottom: 207px;
+    }
+
+    html>body header>.banner-index, main {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .container{
+        padding: 0 16px;
+    }
+}
+
+@media only screen and (max-width: 412px) {
+    .banner-index .banner-ico-index {
+        margin-top: 150px;
+    }
+
+    .banner-index h1 {
+        padding-bottom: 253px;
+    }
+    
+}
+
+@media only screen and (max-width: 900px) {
+    .grid-content-box-projetos>.box-projetos figure span{
+        display: none;
+    }
+
+    #header::before {
+        background-size: 430px 700px;
+        animation: fadeInOutMobile 3.5s infinite;
+        background-image: url(../img/bg-mobile.svg);
+        top: -88px;
+        z-index: 10;
+    }
+
+    .banner-index h1 {
+        padding-bottom: 253px;
+    }
+
+    .banner-index .banner-ico-index {
+        margin-top: 150px;
+    }
+
+    .banner-index .banner-ico-index .banner-ico-circle>svg {
+        right: 25px;
+    }
+
+    .banner-index .banner-ico-index .banner-ico-circle>svg {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .banner-index .banner-ico-index .banner-ico-circle {
+        display: none;
+    }
+
+    .content-about-tags>p {
+        margin-bottom: 40px;
+    }
+
+    section.about>.more-content {
+        margin-top: 64px;
+    }
+
+    section.container-projetos {
+        padding-top: 100px;
+    }
+
+    section.container-projetos.container>h3 {
+        font-family: var(--fonte-principal);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 130%;
+        color: #232323;
+        margin-bottom: 40px;
+    }
+
+    .box-projetos>div>h4 {
+        margin: 16px 0;
+    }
+
+    .box-projetos>div>h5:first-child {
+        font-family: var(--fonte-aux-primaria);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: -0.03em;
+        color: #323232;
+        margin-top: 32px;
+    }
+
+    .box-projetos .content-case-text{
+        margin-bottom: 30px;
+    }
+
+    .box-projetos h4 {
+        font-family: var(--fonte-aux-secundaria);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 130%;
+        color: #232323;
+        margin: 16px 0;
+    }
+
+    .box-projetos>div>h5:last-child {
+        font-family: var(--fonte-corrida);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: -0.03em;
+        color: #ADADAD;
+        margin-bottom: 64px;
+    }
+
+    .content-about-tags>a {
+        max-width: 220px;
+    }
+
+    .banner-index h1 {
+        max-width: 270px;
+        margin-top: 32px;
+    }
+
+    #header .header-container{
+        background-color: white;
+    }
+
+    main{
+        padding-bottom: 120px;
+        margin-top: 20px;
+    }
+
+    section.about>.more-content .dropdown>.drop-brand {
+        font-size: 24px;
+    }
+
+    .content-about-tags{
+        padding-bottom: 60px;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .banner-index .banner-ico-index .banner-ico-circle {
+        position: absolute;
+        right: -60px;
+        z-index: 1;
+        }
+        section.about>.more-content .dropdown>.drop-brand {
+            font-size: 32px;
+        }
+        section.about.about2{
+            background-image: url("../img/coe-gabe.svg");
+            background-repeat: no-repeat no-repeat;
+            background-position: center center;
+            background-size: contain;
+            padding: 116px 0;
+        }
+}
+@media only screen and (min-width: 1300px) {
+    .banner-index .banner-ico-index .banner-ico-circle{
+        position: absolute;
+        right: -2.3rem;
+        z-index: 1;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .banner-index .banner-ico-index .banner-ico-circle{
+        position: absolute;
+        right: 0.1rem;
+        z-index: 1;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+
+    .banner-index h1 {
+        padding-bottom: 218px;
+    }
+
+    .banner-index .banner-ico-index {
+        margin-top: 25vh;
+    }
+
+
+    .box-projetos>div>h4 {
+        padding: 16px 0;
+    }
+
+    .box-projetos>div>h5:first-child {
+        font-family: var(--fonte-aux-primaria);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.03em;
+        color: #323232;
+        padding-top: 32px;
+    }
+
+    .box-projetos h4 {
+        font-family: var(--fonte-aux-secundaria);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 130%;
+        color: #232323;
+        margin: 16px 0;
+    }
+
+    .box-projetos>div>h5:last-child {
+        font-family: var(--fonte-corrida);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.03em;
+        color: #ADADAD;
+        padding-bottom: 72px;
+    }
+
+    section.about {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 0 0 116px 0;
+    }
+
+    main .content-about-tags a {
+        max-width: max-content;
+    }
+
+    .banner-index h1 {
+        max-width: 460px;
+        margin-top: 56px;
+    }
+
+    body main .content-projetos>.grid-content-projetos>.grid-content-box-projetos{
+        display: grid !important;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%/1, max(500px, 100%/2)), 1fr));;
+
+    }
+
+    section.about>.content-about-tags{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+@media only screen and (min-width: 1900px) {
+    #header::before {
+        background-image: url(../img/index/bc_index-1920.svg);
+        background-size: 1920px 800px;
+        max-width: 1920px;
+        margin: 0 auto;
+        height: 800px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+        width: 100%;
+        animation: fadeInOut 3.5s infinite;
+        z-index: -1;
+    }
+}
+
+.banner-ico-index h2 {
+    font-size: 218px;
+    line-height: 218px;
+    font-family: 'Nothing You Could Do', cursive;
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@media screen and (max-width: 768px) {
+    .banner-ico-index h2 {
+        font-size: 12vw; 
+        line-height: 1.5;
+        font-family: 'Nothing You Could Do', cursive;
+        font-weight: bold;
+        font-style: normal;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner-ico-index h2 {
+        font-size: 10vw; 
+        line-height: 1.3;
+        font-family: 'Nothing You Could Do', cursive;
+        font-weight: bold;
+        font-style: normal;
+    }
+}
+
+
+@media screen and (max-width: 999px) {
+    body main .content-projetos>.grid-content-projetos>.grid-content-box-projetos{
+        max-width: fit-content;
+        margin: 0 auto;
+    }
+
+    .grid-content-box-projetos>.box-projetos figure{
+        width: 100%;
+    }
+}
+
+
+
+/*-------------------------- KEYFRAME CIRCLE SVG BANNER --------------------------*/
+
+@-webkit-keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0.15;
+    }
+    
+    25%, 75% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInOutMobile {
+    0%, 100% {
+        opacity: 0.20;
+    }
+    
+    25%, 75% {
+        opacity: 0.30;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+}

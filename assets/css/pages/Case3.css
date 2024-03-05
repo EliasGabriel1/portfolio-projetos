@@ -1,0 +1,39 @@
+:root {
+    --cor-principalcase: #f85081;
+    --cor-secundariacase: #fd9fca;
+    --fillcase: #fd9fca;
+    --cor-border: #fd9fca;
+    --color-header: #fff;
+    --svg: url('../img/menu/Vector.svg');
+    --svg-2: url('../img/menu/Vector1.svg');
+    --svg-3: url('../img/menu/Vector2.svg');
+}
+
+body .header-container>nav>a:hover {
+    border-radius: 50%;
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+body .header-container>nav>a svg>path {
+    fill: #fff;
+}
+
+body .header-container>nav>a:hover svg>path {
+    fill: #000000;
+}
+
+.case-1.active::before{
+    background-image: url('https://placehold.co/300x300');
+}
+
+.case-2.active::before{
+    background-image: url('https://placehold.co/300x300');
+}
+
+.container-bc{
+    max-width: 1440px;
+    margin: 0 auto;
+}

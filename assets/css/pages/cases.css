@@ -1,0 +1,180 @@
+.banner-index {
+    padding: 235px 0 16px 0;
+}
+
+.filter>ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.filter>ul>li:first-child {
+    font-family: var(--fonte-corrida);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #848484;
+}
+
+h1 {
+    font-family: var(--fonte-principal);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 130%;
+    color: #090909;
+}
+
+.banner-index>.navgation-menu-out {
+    font-family: var(--fonte-corrida);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: -0.03em;
+    color: #868E96;
+    margin-bottom: 80px;
+    margin-top: 16px;
+}
+
+button {
+    border-radius: 50px;
+    padding: 24px 48px;
+    font-family: var(--fonte-corrida);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: -0.03em;
+    cursor: pointer;
+}
+
+.grid-content-cards {
+    margin-bottom: 120px;
+}
+
+.grid-content-cards>.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.grid-content-cards>.cards>.card>p {
+    font-family: var(--fonte-corrida);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    color: #323232;
+    margin-top: 32px;
+}
+
+.grid-content-cards>.cards>.card h4 {
+    font-family: var(--fonte-principal);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    color: #090909;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.grid-content-cards>.cards>.card>h5 {
+    font-family: var(--fonte-corrida);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    color: #ADADAD;
+}
+
+.grid-content-cards {
+    margin-top: 64px;
+}
+
+.card figure{
+    position: relative;
+}
+
+.card figure.NautaLoger:before,
+.card figure.Omnifit:before,
+.card figure.TXSmart:before,
+.card figure.Mentto:before,
+.card figure.Contérus:before, 
+.card figure.Martinello:before{
+    content: url(https://i.postimg.cc/x1y8PjGN/chips.png);
+    position: absolute;
+    z-index: 10;
+    top: 22px;
+    left: 24px;
+}
+.card figure{
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.card figure>img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.card figure:hover>img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 900px) {
+    .filter {
+        /* display: none; */
+        overflow: auto;
+    }
+
+    .filter::-webkit-scrollbar{
+        width: 1px;
+    }
+
+    .filter ul>li>button{
+        white-space: nowrap;
+    }
+
+    .grid-content-cards>.cards>.card picture>img {
+        width: 380px;
+    }
+
+    #cards>.card{
+        max-width: 380px !important;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .grid-content-cards>.cards>.card picture>img {
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .grid-content-cards>.cards {
+        gap: 60px 10px;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 1290px) {
+    .grid-content-cards>.cards {
+        gap: 64px 31px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+}
