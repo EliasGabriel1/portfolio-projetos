@@ -27,7 +27,7 @@ p,a,button{
 }
 
 header::before {
-    height: 750px;
+    height: 930px;
     background-image: url(../../../assets/img/aboutme/eu-bg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
