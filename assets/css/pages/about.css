@@ -131,7 +131,8 @@ header::before {
     }
 
     header::before {
-        height: 650px;
+        height: 1000px;
+        background-position: 55% center;
     }
 }
 
