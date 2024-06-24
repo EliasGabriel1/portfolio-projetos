@@ -279,7 +279,7 @@ input:checked ~ .container-header .container__header .logo > path {
     font-style: normal;
     font-weight: 600;
     line-height: 140%;
-    font-size: 50px;
+    font-size: 25px;
     font-family: var(--fonte-aux-primaria);
 }
 

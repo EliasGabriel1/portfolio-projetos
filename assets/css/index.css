@@ -460,6 +460,7 @@ main .content-projetos > .button {
 
   #header .header-container {
     background-color: white;
+    z-index: 40;
   }
 
   main {
