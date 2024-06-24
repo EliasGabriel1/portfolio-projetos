@@ -111,21 +111,30 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="../../../assets/css/pages/basecase.css" />
-    <link rel="stylesheet" href="../../../assets/css/pages/Case1.css" />
-    <link rel="stylesheet" href="../../../assets/css/main.css" />
-    <link rel="stylesheet" href="../../../assets/css/menu.css" />
-    <link rel="stylesheet" href="../../../assets/css/footer.css" />
+    <link rel="stylesheet" href="../../../../assets/css/pages/basecase.css" />
+    <link rel="stylesheet" href="../../../../assets/css/pages/Case1.css" />
+    <link rel="stylesheet" href="../../../../assets/css/main.css" />
+    <link rel="stylesheet" href="../../../../assets/css/menu.css" />
+    <link rel="stylesheet" href="../../../../assets/css/footer.css" />
     <link
       rel="stylesheet"
-      href="../../../assets/css/tympanuscss/buttonhovers.css"
+      href="../../../../assets/css/tympanuscss/buttonhovers.css"
     />
-    <link rel="stylesheet" href="../../../assets/css/tympanuscss/linehovers.css" />
+    <link rel="stylesheet" href="../../../../assets/css/tympanuscss/linehovers.css" />
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="../../../assets/icon/favicon.ico"
+      href="../../../../assets/icon/favicon.ico"
     />
+    <style>
+      pre {
+          background-color: #f4f4f4;
+          padding: 10px;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          overflow-x: auto;
+      }
+  </style>
     <title>Elias Gabe || gabe ajuda (ou tenta)</title>
   </head>
 
@@ -280,9 +289,9 @@
       <div class="banner-index container">
         <div class="d-grid-banner-index">
           <div class="d-grid-banner-index-column-2">
-            <p>Erros comuns</p>
+            <p>Duvidas comuns</p>
             <h1>
-                fiz essa página só de erros comuns
+                fiz essa página só de duvidas comuns
             </h1>
           </div>
         </div>
@@ -290,8 +299,95 @@
     </header>
 
     <main class="container">
+      <h1>Usando Context API com React</h1>
+      <p>A Context API do React é uma maneira de gerenciar o estado global da aplicação, permitindo que dados sejam passados através da árvore de componentes sem a necessidade de prop drilling (passagem de props manualmente através de cada nível).</p>
+      
+      <h2>Passo 1: Criando o Contexto</h2>
+      <p>Primeiro, criamos um contexto que será usado para compartilhar dados entre diferentes componentes.</p>
+      <pre><code>
+        // src/context/MeuContexto.js
+        import React, { createContext, useState } from 'react';
 
-    </main>
+        export const MeuContexto = createContext();
+
+        export const MeuProvider = ({ children }) => {
+          const [estado, setEstado] = useState('valor inicial');
+
+          return (
+              <MeuContexto.Provider value={{ estado, setEstado }}>
+                  {children}
+              </MeuContexto.Provider>
+          );
+        };
+      </code></pre>
+
+      <h2>Passo 2: Usando o Provider no Componente Principal</h2>
+      <p>Em seguida, usamos o provider do contexto no componente principal da aplicação, geralmente no App.js, para envolver a aplicação com o contexto.</p>
+      <pre><code>// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { MeuProvider } from './context/MeuContexto';
+import Home from './components/Home';
+import OutraRota from './components/OutraRota';
+
+function App() {
+  return (
+      <MeuProvider>
+          <Router>
+              <Switch>
+                  <Route path="/" exact component={Home} />
+                  <Route path="/outra-rota" component={OutraRota} />
+              </Switch>
+          </Router>
+      </MeuProvider>
+  );
+}
+
+export default App;
+      </code></pre>
+
+      <h2>Passo 3: Consumindo o Contexto em Componentes</h2>
+      <p>Finalmente, podemos consumir o contexto nos componentes que precisam acessar ou modificar o estado compartilhado.</p>
+      <pre>
+        <code>// src/components/Home.js
+import React, { useContext } from 'react';
+import { MeuContexto } from '../context/MeuContexto';
+
+const Home = () => {
+  const { estado, setEstado } = useContext(MeuContexto);
+
+  return (
+      <div>
+          <h1>Home</h1>
+          <p>Estado atual: {estado}</p>
+          <button onClick={() => setEstado('novo valor')}>Mudar Estado</button>
+      </div>
+  );
+};
+
+export default Home;
+
+// src/components/OutraRota.js
+import React, { useContext } from 'react';
+import { MeuContexto } from '../context/MeuContexto';
+
+const OutraRota = () => {
+  const { estado } = useContext(MeuContexto);
+
+  return (
+      <div>
+          <h1>Outra Rota</h1>
+          <p>Estado atual: {estado}</p>
+      </div>
+  );
+};
+
+export default OutraRota;
+      </code></pre>
+
+      <h2>Resumo</h2>
+      <p>Com esses passos, você configurou um contexto que pode ser usado para compartilhar estado entre diferentes rotas em uma aplicação React. Isso evita a necessidade de passar props manualmente por cada nível da árvore de componentes.</p>
+  </main>
 
     <footer class="cursor-bgblack">
       <div class="footer-header container flex-space-between">
@@ -334,7 +430,7 @@
             href="#body"
             class="flex-space-between align-center button scroll-svg arrow-link"
           >
-            <img src="../../../assets/img/arrowup.svg" alt="" />
+            <img src=".../../../../assets/img/arrowup.svg" alt="" />
           </a>
         </div>
       </div>
@@ -343,8 +439,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-    <script src="../../../assets/js/menu.js"></script>
-    <script src="../../../assets/js/main.js"></script>
+    <script src="../../../../assets/js/menu.js"></script>
+    <script src="../../../../assets/js/main.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4381814712682943"
     crossorigin="anonymous"></script>
   </body>
