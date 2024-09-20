@@ -129,24 +129,6 @@
       type="image/x-icon"
       href="../../../../assets/icon/favicon.ico"
     />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-      }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-      pre {
-        background-color: #f4f4f4;
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        overflow-x: auto;
-      }
-    </style>
     <title>Elias Gabe || gabe ajuda (ou tenta)</title>
   </head>
 
@@ -302,109 +284,104 @@
         <div class="d-grid-banner-index">
           <div class="d-grid-banner-index-column-2">
             <p>Duvidas comuns</p>
-            <h1>fiz essa página só de duvidas comuns</h1>
+            <h1>Como Iniciar com as DevTools</h1>
           </div>
         </div>
       </div>
     </header>
 
     <main class="container">
-      <h1>Maneiras de Iniciar um Projeto</h1>
-      <p>
-        Existem várias maneiras de iniciar um projeto moderno de JavaScript.
-        Aqui estão alguns dos métodos mais comuns:
-      </p>
-
-      <h2>1. Usando Vite</h2>
-      <p>
-        Vite é uma ferramenta de build que visa fornecer um ambiente de
-        desenvolvimento mais rápido e enxuto para projetos modernos de
-        front-end. Para criar um projeto com Vite, siga os passos abaixo:
-      </p>
-      <pre><code>// 1. Instale o Vite globalmente (opcional)
-npm install -g create-vite
-
-// 2. Crie um novo projeto
-npm create vite@latest
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Instale as dependências
-npm install
-
-// 5. Inicie o servidor de desenvolvimento
-npm run dev
-      </code></pre>
-
-      <h2>2. Usando Create React App</h2>
-      <p>
-        Create React App é uma ferramenta oficial do React para criar um novo
-        projeto com uma configuração inicial pronta. Siga os passos abaixo para
-        criar um projeto com Create React App:
-      </p>
-      <pre><code>// 1. Crie um novo projeto usando Create React App
-npx create-react-app nome-do-seu-projeto
-
-// 2. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 3. Inicie o servidor de desenvolvimento
-npm start
-      </code></pre>
-
-      <h2>3. Usando Next.js</h2>
-      <p>
-        Next.js é um framework para React que permite renderização do lado do
-        servidor e geração de sites estáticos. Para iniciar um projeto com
-        Next.js, siga os passos abaixo:
-      </p>
-      <pre><code>// 1. Crie um novo projeto usando o template Next.js
-npx create-next-app@latest nome-do-seu-projeto
-
-// 2. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 3. Inicie o servidor de desenvolvimento
-npm run dev
-      </code></pre>
-
-      <h2>4. Usando Vue CLI</h2>
-      <p>
-        Vue CLI é uma ferramenta oficial para scaffolding de projetos Vue.js.
-        Para criar um projeto com Vue CLI, siga os passos abaixo:
-      </p>
-      <pre><code>// 1. Instale Vue CLI globalmente
-npm install -g @vue/cli
-
-// 2. Crie um novo projeto
-vue create nome-do-seu-projeto
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Inicie o servidor de desenvolvimento
-npm run serve
-      </code></pre>
-
-      <h2>5. Usando Angular CLI</h2>
-      <p>
-        Angular CLI é uma ferramenta oficial para criar e gerenciar projetos
-        Angular. Para criar um projeto com Angular CLI, siga os passos abaixo:
-      </p>
-      <pre><code>// 1. Instale Angular CLI globalmente
-npm install -g @angular/cli
-
-// 2. Crie um novo projeto
-ng new nome-do-seu-projeto
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Inicie o servidor de desenvolvimento
-ng serve
-      </code></pre>
-    </main>
+        <p>
+          As DevTools são ferramentas integradas em navegadores modernos que permitem inspecionar, depurar e otimizar seu código web. Neste guia, você encontrará passos e dicas para começar a usar as DevTools de forma eficaz.
+        </p>
+      
+        <h2>1. Acessando as DevTools</h2>
+        <p>
+          Para abrir as DevTools, você pode usar um dos seguintes métodos:
+          <ul>
+            <li>Pressione <code>F12</code> no teclado.</li>
+            <li>Use o atalho <code>Ctrl + Shift + I</code> (ou <code>Cmd + Option + I</code> no Mac).</li>
+            <li>Clique com o botão direito em qualquer lugar da página e selecione <strong>Inspecionar</strong>.</li>
+          </ul>
+        </p>
+      
+        <h2>2. Painel de Elementos</h2>
+        <p>
+          O painel de elementos permite inspecionar e editar o HTML e o CSS da sua página. Você pode:
+        </p>
+        <ul>
+          <li>Selecionar elementos clicando na ferramenta de seleção (seta) e depois clicando na página.</li>
+          <li>Ver e editar atributos HTML e propriedades CSS diretamente.</li>
+          <li>Visualizar as mudanças em tempo real.</li>
+        </ul>
+      
+        <h2>3. Painel de Console</h2>
+        <p>
+          O console é uma ferramenta poderosa para depuração e execução de JavaScript. Você pode:
+        </p>
+        <ul>
+          <li>Executar comandos JavaScript diretamente.</li>
+          <li>Ver mensagens de erro e log de informações.</li>
+          <li>Testar e depurar funções de forma interativa.</li>
+        </ul>
+      
+        <h2>4. Painel de Rede (Network)</h2>
+        <p>
+          O painel de rede permite monitorar todas as requisições feitas pela sua página. Você pode:
+        </p>
+        <ul>
+          <li>Verificar o tempo de carregamento de cada recurso (imagens, scripts, etc.).</li>
+          <li>Analisar respostas de API e verificar dados recebidos.</li>
+          <li>Identificar gargalos de desempenho.</li>
+        </ul>
+      
+        <h2>5. Ferramentas de Performance</h2>
+        <p>
+          O painel de performance permite gravar e analisar o desempenho da sua página. Você pode:
+        </p>
+        <ul>
+          <li>Gravar a execução da página para identificar tempos de carregamento e renderização.</li>
+          <li>Visualizar o uso de recursos e a fluidez da interface.</li>
+        </ul>
+      
+        <h2>6. Ferramentas de Acessibilidade</h2>
+        <p>
+          As DevTools oferecem recursos para verificar a acessibilidade do seu site. Você pode:
+        </p>
+        <ul>
+          <li>Usar o painel de acessibilidade para verificar contrastes de cor e estrutura semântica.</li>
+          <li>Testar a navegação usando apenas o teclado.</li>
+        </ul>
+      
+        <h2>7. Debugging de JavaScript</h2>
+        <p>
+          Para depurar código JavaScript, você pode definir pontos de interrupção (breakpoints). Isso permite pausar a execução do código e inspecionar variáveis e o estado da aplicação em um determinado ponto. Para definir um breakpoint:
+        </p>
+        <ul>
+          <li>Navegue até o painel de fontes (Sources).</li>
+          <li>Encontre o arquivo JavaScript desejado e clique na linha onde deseja parar a execução.</li>
+          <li>Use o botão de play para continuar a execução ou controle a execução passo a passo.</li>
+        </ul>
+      
+        <h2>8. Dicas para Uso Eficiente das DevTools</h2>
+        <ol>
+          <li>
+            <strong>Atalhos:</strong> Aprenda os atalhos de teclado para navegar rapidamente entre os painéis.
+          </li>
+          <li>
+            <strong>Documentação:</strong> Consulte a documentação oficial do navegador para entender melhor cada funcionalidade das DevTools.
+          </li>
+          <li>
+            <strong>Experimente!</strong> Não tenha medo de explorar as ferramentas e fazer alterações. É uma ótima maneira de aprender.
+          </li>
+        </ol>
+      
+        <h2>9. Conclusão</h2>
+        <p>
+          As DevTools são uma parte essencial do desenvolvimento web, permitindo que você inspecione, depure e otimize seu código de forma eficiente. Familiarize-se com essas ferramentas e use-as regularmente em seus projetos. Para mais informações, consulte a documentação das <a href="https://developer.mozilla.org/en-US/docs/Tools">DevTools</a> da Mozilla.
+        </p>
+      </main>
+      
 
     <footer class="cursor-bgblack">
       <div class="footer-header container flex-space-between">

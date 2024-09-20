@@ -129,24 +129,6 @@
       type="image/x-icon"
       href="../../../../assets/icon/favicon.ico"
     />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-      }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-      pre {
-        background-color: #f4f4f4;
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        overflow-x: auto;
-      }
-    </style>
     <title>Elias Gabe || gabe ajuda (ou tenta)</title>
   </head>
 
@@ -163,7 +145,7 @@
             class="container container__header"
             style="display: flex; justify-content: space-between"
           >
-          <a href="../../index.html">
+            <a href="../Projetos.html">
               <svg
                 class="logo"
                 width="111"
@@ -302,108 +284,63 @@
         <div class="d-grid-banner-index">
           <div class="d-grid-banner-index-column-2">
             <p>Duvidas comuns</p>
-            <h1>fiz essa página só de duvidas comuns</h1>
+            <h1>Trilha para o Básico</h1>
           </div>
         </div>
       </div>
     </header>
 
     <main class="container">
-      <h1>Maneiras de Iniciar um Projeto</h1>
+      <h1>Como fazer uma API do zero com Node</h1>
       <p>
-        Existem várias maneiras de iniciar um projeto moderno de JavaScript.
-        Aqui estão alguns dos métodos mais comuns:
+        Node.js permite que você crie APIs poderosas utilizando JavaScript no
+        lado do servidor. Para começar a criar uma API do zero com Node.js, você
+        precisa instalar o Node no seu sistema e iniciar um projeto Node.js com
+        <code>npm init</code>.
       </p>
 
-      <h2>1. Usando Vite</h2>
+      <h2>Instalando o Node.js e Express</h2>
       <p>
-        Vite é uma ferramenta de build que visa fornecer um ambiente de
-        desenvolvimento mais rápido e enxuto para projetos modernos de
-        front-end. Para criar um projeto com Vite, siga os passos abaixo:
+        Primeiro, instale o Node.js no seu sistema. Depois, inicie um projeto e
+        instale o Express, que é um framework leve para construir servidores.
       </p>
-      <pre><code>// 1. Instale o Vite globalmente (opcional)
-npm install -g create-vite
+      <pre>
+        <code>
+        # Instalar Node.js (verifique o site oficial)
+        # Inicializar um projeto Node.js
+        npm init -y
+        
+        # Instalar o Express
+        npm install express
+        </code>
+        </pre>
 
-// 2. Crie um novo projeto
-npm create vite@latest
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Instale as dependências
-npm install
-
-// 5. Inicie o servidor de desenvolvimento
-npm run dev
-      </code></pre>
-
-      <h2>2. Usando Create React App</h2>
+      <h2>Criando seu primeiro servidor com Express</h2>
       <p>
-        Create React App é uma ferramenta oficial do React para criar um novo
-        projeto com uma configuração inicial pronta. Siga os passos abaixo para
-        criar um projeto com Create React App:
+        Agora, vamos criar um servidor básico que responde a uma requisição GET.
       </p>
-      <pre><code>// 1. Crie um novo projeto usando Create React App
-npx create-react-app nome-do-seu-projeto
-
-// 2. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 3. Inicie o servidor de desenvolvimento
-npm start
-      </code></pre>
-
-      <h2>3. Usando Next.js</h2>
+      <pre>
+        <code>
+      // server.js
+      const express = require('express');
+      const app = express();
+      const port = 3000;
+      
+      app.get('/', (req, res) => {
+        res.send('Olá, mundo! Esta é sua primeira API com Node.js!');
+      });
+      
+      app.listen(port, () => {
+        console.log(`Servidor rodando em http://localhost:${port}`);
+      });
+        </code>
+        </pre>
       <p>
-        Next.js é um framework para React que permite renderização do lado do
-        servidor e geração de sites estáticos. Para iniciar um projeto com
-        Next.js, siga os passos abaixo:
+        Com o código acima, você criou um servidor que responde com a mensagem
+        "Olá, mundo!" quando acessado no navegador. Para iniciar o servidor, use
+        <code>node server.js</code> no terminal e acesse
+        <code>http://localhost:3000</code> no seu navegador.
       </p>
-      <pre><code>// 1. Crie um novo projeto usando o template Next.js
-npx create-next-app@latest nome-do-seu-projeto
-
-// 2. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 3. Inicie o servidor de desenvolvimento
-npm run dev
-      </code></pre>
-
-      <h2>4. Usando Vue CLI</h2>
-      <p>
-        Vue CLI é uma ferramenta oficial para scaffolding de projetos Vue.js.
-        Para criar um projeto com Vue CLI, siga os passos abaixo:
-      </p>
-      <pre><code>// 1. Instale Vue CLI globalmente
-npm install -g @vue/cli
-
-// 2. Crie um novo projeto
-vue create nome-do-seu-projeto
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Inicie o servidor de desenvolvimento
-npm run serve
-      </code></pre>
-
-      <h2>5. Usando Angular CLI</h2>
-      <p>
-        Angular CLI é uma ferramenta oficial para criar e gerenciar projetos
-        Angular. Para criar um projeto com Angular CLI, siga os passos abaixo:
-      </p>
-      <pre><code>// 1. Instale Angular CLI globalmente
-npm install -g @angular/cli
-
-// 2. Crie um novo projeto
-ng new nome-do-seu-projeto
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Inicie o servidor de desenvolvimento
-ng serve
-      </code></pre>
     </main>
 
     <footer class="cursor-bgblack">

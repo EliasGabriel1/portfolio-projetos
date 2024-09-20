@@ -129,24 +129,6 @@
       type="image/x-icon"
       href="../../../../assets/icon/favicon.ico"
     />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-      }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-      pre {
-        background-color: #f4f4f4;
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        overflow-x: auto;
-      }
-    </style>
     <title>Elias Gabe || gabe ajuda (ou tenta)</title>
   </head>
 
@@ -302,108 +284,146 @@
         <div class="d-grid-banner-index">
           <div class="d-grid-banner-index-column-2">
             <p>Duvidas comuns</p>
-            <h1>fiz essa página só de duvidas comuns</h1>
+            <h1>Como Iniciar no GitHub</h1>
           </div>
         </div>
       </div>
     </header>
 
     <main class="container">
-      <h1>Maneiras de Iniciar um Projeto</h1>
       <p>
-        Existem várias maneiras de iniciar um projeto moderno de JavaScript.
-        Aqui estão alguns dos métodos mais comuns:
+        O GitHub é uma plataforma de hospedagem de código-fonte que utiliza o
+        Git para controle de versão. Ele permite que você colabore em projetos,
+        gerencie o código e acompanhe alterações. Neste guia, você encontrará
+        passos essenciais para começar a usar o GitHub de maneira eficaz.
       </p>
 
-      <h2>1. Usando Vite</h2>
+      <h2>1. Criando uma Conta no GitHub</h2>
       <p>
-        Vite é uma ferramenta de build que visa fornecer um ambiente de
-        desenvolvimento mais rápido e enxuto para projetos modernos de
-        front-end. Para criar um projeto com Vite, siga os passos abaixo:
+        Para usar o GitHub, você precisa criar uma conta. Acesse o site oficial
+        e siga os passos:
+        <a href="https://github.com/join">Criar Conta no GitHub</a>.
       </p>
-      <pre><code>// 1. Instale o Vite globalmente (opcional)
-npm install -g create-vite
 
-// 2. Crie um novo projeto
-npm create vite@latest
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Instale as dependências
-npm install
-
-// 5. Inicie o servidor de desenvolvimento
-npm run dev
-      </code></pre>
-
-      <h2>2. Usando Create React App</h2>
+      <h2>2. Instalando o Git</h2>
       <p>
-        Create React App é uma ferramenta oficial do React para criar um novo
-        projeto com uma configuração inicial pronta. Siga os passos abaixo para
-        criar um projeto com Create React App:
+        O Git é um sistema de controle de versão que você usará localmente. Para
+        instalá-lo:
+        <a href="https://git-scm.com/downloads">Baixar Git</a>.
       </p>
-      <pre><code>// 1. Crie um novo projeto usando Create React App
-npx create-react-app nome-do-seu-projeto
-
-// 2. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 3. Inicie o servidor de desenvolvimento
-npm start
-      </code></pre>
-
-      <h2>3. Usando Next.js</h2>
       <p>
-        Next.js é um framework para React que permite renderização do lado do
-        servidor e geração de sites estáticos. Para iniciar um projeto com
-        Next.js, siga os passos abaixo:
+        Após a instalação, você pode configurar seu nome de usuário e e-mail no
+        terminal com os seguintes comandos:
       </p>
-      <pre><code>// 1. Crie um novo projeto usando o template Next.js
-npx create-next-app@latest nome-do-seu-projeto
+      <pre>
+          <code>
+          git config --global user.name "Seu Nome"
+          git config --global user.email "seuemail@example.com"
+          </code>
+        </pre>
 
-// 2. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 3. Inicie o servidor de desenvolvimento
-npm run dev
-      </code></pre>
-
-      <h2>4. Usando Vue CLI</h2>
+      <h2>3. Criando um Repositório</h2>
       <p>
-        Vue CLI é uma ferramenta oficial para scaffolding de projetos Vue.js.
-        Para criar um projeto com Vue CLI, siga os passos abaixo:
+        Para iniciar um projeto, você precisa criar um repositório. Siga estes
+        passos:
       </p>
-      <pre><code>// 1. Instale Vue CLI globalmente
-npm install -g @vue/cli
+      <ol>
+        <li>
+          Acesse sua conta do GitHub e clique no botão <strong>New</strong>.
+        </li>
+        <li>Preencha o nome do repositório e uma descrição (opcional).</li>
+        <li>
+          Escolha se deseja que o repositório seja público ou privado e clique
+          em <strong>Create repository</strong>.
+        </li>
+      </ol>
 
-// 2. Crie um novo projeto
-vue create nome-do-seu-projeto
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Inicie o servidor de desenvolvimento
-npm run serve
-      </code></pre>
-
-      <h2>5. Usando Angular CLI</h2>
+      <h2>4. Clonando um Repositório</h2>
       <p>
-        Angular CLI é uma ferramenta oficial para criar e gerenciar projetos
-        Angular. Para criar um projeto com Angular CLI, siga os passos abaixo:
+        Para trabalhar em um repositório localmente, você deve cloná-lo. Use o
+        seguinte comando no terminal:
       </p>
-      <pre><code>// 1. Instale Angular CLI globalmente
-npm install -g @angular/cli
+      <pre>
+          <code>
+          git clone https://github.com/usuario/nome-do-repositorio.git
+          </code>
+        </pre>
 
-// 2. Crie um novo projeto
-ng new nome-do-seu-projeto
+      <h2>5. Realizando Alterações e Commits</h2>
+      <p>
+        Após fazer alterações nos arquivos, você precisa adicioná-los e criar um
+        commit. Use os comandos:
+      </p>
+      <pre>
+          <code>
+          git add .
+          git commit -m "Descrição do que foi alterado"
+          </code>
+        </pre>
 
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
+      <h2>6. Enviando Alterações para o GitHub</h2>
+      <p>
+        Para enviar suas alterações para o repositório remoto, utilize o
+        comando:
+      </p>
+      <pre>
+          <code>
+          git push origin main
+          </code>
+        </pre>
+      <p>
+        (Certifique-se de substituir "main" pelo nome da sua branch, se
+        necessário.)
+      </p>
 
-// 4. Inicie o servidor de desenvolvimento
-ng serve
-      </code></pre>
+      <h2>7. Colaborando com Outros</h2>
+      <p>
+        GitHub facilita a colaboração. Para contribuir em projetos de outras
+        pessoas:
+      </p>
+      <ul>
+        <li>
+          <strong>Fork:</strong> Crie uma cópia do repositório no seu perfil.
+        </li>
+        <li><strong>Clone:</strong> Clone o repositório forkado.</li>
+        <li>
+          <strong>Faça suas alterações:</strong> Adicione e faça commit das suas
+          alterações.
+        </li>
+        <li>
+          <strong>Push:</strong> Envie suas alterações para o seu repositório no
+          GitHub.
+        </li>
+        <li>
+          <strong>Pull Request:</strong> Crie um pull request para sugerir suas
+          alterações ao repositório original.
+        </li>
+      </ul>
+
+      <h2>8. Dicas para Uso Eficiente do GitHub</h2>
+      <ol>
+        <li>
+          <strong>README.md:</strong> Crie um arquivo README para documentar seu
+          projeto e como usá-lo.
+        </li>
+        <li>
+          <strong>Issues:</strong> Use a seção de Issues para relatar problemas
+          ou sugerir melhorias no projeto.
+        </li>
+        <li>
+          <strong>Branches:</strong> Utilize branches para desenvolver novas
+          funcionalidades sem afetar o código principal.
+        </li>
+      </ol>
+
+      <h2>9. Conclusão</h2>
+      <p>
+        GitHub é uma ferramenta poderosa para desenvolvimento colaborativo.
+        Familiarize-se com suas funcionalidades e explore recursos como GitHub
+        Actions e GitHub Pages para aprimorar ainda mais seus projetos. Para
+        mais informações, consulte a documentação oficial do
+        <a href="https://docs.github.com/en">GitHub</a>.
+      </p>
     </main>
 
     <footer class="cursor-bgblack">

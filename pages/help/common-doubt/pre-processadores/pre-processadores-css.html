@@ -129,24 +129,6 @@
       type="image/x-icon"
       href="../../../../assets/icon/favicon.ico"
     />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-      }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-      pre {
-        background-color: #f4f4f4;
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        overflow-x: auto;
-      }
-    </style>
     <title>Elias Gabe || gabe ajuda (ou tenta)</title>
   </head>
 
@@ -302,108 +284,93 @@
         <div class="d-grid-banner-index">
           <div class="d-grid-banner-index-column-2">
             <p>Duvidas comuns</p>
-            <h1>fiz essa página só de duvidas comuns</h1>
+            <h1>Como Iniciar com as DevTools</h1>
           </div>
         </div>
       </div>
     </header>
 
     <main class="container">
-      <h1>Maneiras de Iniciar um Projeto</h1>
+      <h1>Pré-processadores de CSS</h1>
       <p>
-        Existem várias maneiras de iniciar um projeto moderno de JavaScript.
-        Aqui estão alguns dos métodos mais comuns:
+        Pré-processadores de CSS, como SASS e LESS, oferecem uma maneira mais
+        organizada e eficiente de escrever CSS, permitindo o uso de variáveis,
+        aninhamento e outras funcionalidades que facilitam o desenvolvimento e a
+        manutenção de estilos.
       </p>
 
-      <h2>1. Usando Vite</h2>
+      <h2>1. O que são Pré-processadores de CSS?</h2>
       <p>
-        Vite é uma ferramenta de build que visa fornecer um ambiente de
-        desenvolvimento mais rápido e enxuto para projetos modernos de
-        front-end. Para criar um projeto com Vite, siga os passos abaixo:
+        Pré-processadores são ferramentas que extendem as funcionalidades do CSS
+        tradicional, permitindo que você escreva estilos de forma mais dinâmica.
+        Eles são compilados em CSS puro, que é o que o navegador entende.
       </p>
-      <pre><code>// 1. Instale o Vite globalmente (opcional)
-npm install -g create-vite
 
-// 2. Crie um novo projeto
-npm create vite@latest
+      <h2>2. Principais Pré-processadores</h2>
+      <p>Abaixo estão alguns dos pré-processadores mais populares:</p>
+      <ul>
+        <li>
+          <strong>SASS (Syntactically Awesome Style Sheets):</strong> Um dos
+          pré-processadores mais usados, o SASS permite o uso de variáveis,
+          mixins, funções e muito mais. A sintaxe do SASS pode ser escrita de
+          duas formas: a versão indented (.sass) e a versão com chaves (.scss).
+          <br /><a href="https://sass-lang.com/" target="_blank"
+            >Saiba mais sobre SASS</a
+          >
+        </li>
+        <li>
+          <strong>LESS:</strong> O LESS é semelhante ao SASS e também permite o
+          uso de variáveis e funções. É fácil de aprender e se integra bem com
+          projetos existentes. <br /><a
+            href="http://lesscss.org/"
+            target="_blank"
+            >Saiba mais sobre LESS</a
+          >
+        </li>
+      </ul>
 
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
+      <h2>3. Vantagens de Usar Pré-processadores</h2>
+      <p>Usar pré-processadores oferece várias vantagens, como:</p>
+      <ul>
+        <li>
+          <strong>Organização:</strong> Com variáveis e aninhamento, o CSS se
+          torna mais estruturado e fácil de manter.
+        </li>
+        <li>
+          <strong>Reutilização:</strong> Mixins e funções permitem reutilizar
+          código, evitando duplicação.
+        </li>
+        <li>
+          <strong>Funcionalidades avançadas:</strong> Funcionalidades como
+          operações matemáticas e condicionais proporcionam maior flexibilidade.
+        </li>
+      </ul>
 
-// 4. Instale as dependências
-npm install
-
-// 5. Inicie o servidor de desenvolvimento
-npm run dev
-      </code></pre>
-
-      <h2>2. Usando Create React App</h2>
+      <h2>4. Como Começar a Usar SASS e LESS?</h2>
       <p>
-        Create React App é uma ferramenta oficial do React para criar um novo
-        projeto com uma configuração inicial pronta. Siga os passos abaixo para
-        criar um projeto com Create React App:
+        Para começar a usar SASS ou LESS, você precisará instalá-los. Aqui estão
+        alguns passos básicos:
       </p>
-      <pre><code>// 1. Crie um novo projeto usando Create React App
-npx create-react-app nome-do-seu-projeto
+      <ol>
+        <li>Instale o SASS ou LESS via npm:</li>
+        <code>npm install -g sass</code>
+        <code>npm install -g less</code>
+        <li>
+          Crie um arquivo com a extensão .scss (para SASS) ou .less (para LESS).
+        </li>
+        <li>Escreva seu código com as funcionalidades que desejar.</li>
+        <li>Compile o arquivo para gerar o CSS final.</li>
+      </ol>
 
-// 2. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 3. Inicie o servidor de desenvolvimento
-npm start
-      </code></pre>
-
-      <h2>3. Usando Next.js</h2>
+      <h2>5. Conclusão</h2>
       <p>
-        Next.js é um framework para React que permite renderização do lado do
-        servidor e geração de sites estáticos. Para iniciar um projeto com
-        Next.js, siga os passos abaixo:
+        Pré-processadores de CSS são ferramentas poderosas que tornam a escrita
+        de estilos mais eficiente e organizada. Para aprender mais sobre como
+        usar pré-processadores, acesse:
+        <a href="pre-processadores/pre-processadores-css.html"
+          >Pré-processadores CSS</a
+        >.
       </p>
-      <pre><code>// 1. Crie um novo projeto usando o template Next.js
-npx create-next-app@latest nome-do-seu-projeto
-
-// 2. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 3. Inicie o servidor de desenvolvimento
-npm run dev
-      </code></pre>
-
-      <h2>4. Usando Vue CLI</h2>
-      <p>
-        Vue CLI é uma ferramenta oficial para scaffolding de projetos Vue.js.
-        Para criar um projeto com Vue CLI, siga os passos abaixo:
-      </p>
-      <pre><code>// 1. Instale Vue CLI globalmente
-npm install -g @vue/cli
-
-// 2. Crie um novo projeto
-vue create nome-do-seu-projeto
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Inicie o servidor de desenvolvimento
-npm run serve
-      </code></pre>
-
-      <h2>5. Usando Angular CLI</h2>
-      <p>
-        Angular CLI é uma ferramenta oficial para criar e gerenciar projetos
-        Angular. Para criar um projeto com Angular CLI, siga os passos abaixo:
-      </p>
-      <pre><code>// 1. Instale Angular CLI globalmente
-npm install -g @angular/cli
-
-// 2. Crie um novo projeto
-ng new nome-do-seu-projeto
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Inicie o servidor de desenvolvimento
-ng serve
-      </code></pre>
     </main>
 
     <footer class="cursor-bgblack">

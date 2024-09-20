@@ -120,33 +120,12 @@
       rel="stylesheet"
       href="../../../../assets/css/tympanuscss/buttonhovers.css"
     />
-    <link
-      rel="stylesheet"
-      href="../../../../assets/css/tympanuscss/linehovers.css"
-    />
+    <link rel="stylesheet" href="../../../../assets/css/tympanuscss/linehovers.css" />
     <link
       rel="shortcut icon"
       type="image/x-icon"
       href="../../../../assets/icon/favicon.ico"
     />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-      }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-      pre {
-        background-color: #f4f4f4;
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        overflow-x: auto;
-      }
-    </style>
     <title>Elias Gabe || gabe ajuda (ou tenta)</title>
   </head>
 
@@ -302,109 +281,127 @@
         <div class="d-grid-banner-index">
           <div class="d-grid-banner-index-column-2">
             <p>Duvidas comuns</p>
-            <h1>fiz essa página só de duvidas comuns</h1>
+            <h1>Como Iniciar no CSS</h1> 
           </div>
         </div>
       </div>
     </header>
 
     <main class="container">
-      <h1>Maneiras de Iniciar um Projeto</h1>
-      <p>
-        Existem várias maneiras de iniciar um projeto moderno de JavaScript.
-        Aqui estão alguns dos métodos mais comuns:
-      </p>
-
-      <h2>1. Usando Vite</h2>
-      <p>
-        Vite é uma ferramenta de build que visa fornecer um ambiente de
-        desenvolvimento mais rápido e enxuto para projetos modernos de
-        front-end. Para criar um projeto com Vite, siga os passos abaixo:
-      </p>
-      <pre><code>// 1. Instale o Vite globalmente (opcional)
-npm install -g create-vite
-
-// 2. Crie um novo projeto
-npm create vite@latest
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Instale as dependências
-npm install
-
-// 5. Inicie o servidor de desenvolvimento
-npm run dev
-      </code></pre>
-
-      <h2>2. Usando Create React App</h2>
-      <p>
-        Create React App é uma ferramenta oficial do React para criar um novo
-        projeto com uma configuração inicial pronta. Siga os passos abaixo para
-        criar um projeto com Create React App:
-      </p>
-      <pre><code>// 1. Crie um novo projeto usando Create React App
-npx create-react-app nome-do-seu-projeto
-
-// 2. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 3. Inicie o servidor de desenvolvimento
-npm start
-      </code></pre>
-
-      <h2>3. Usando Next.js</h2>
-      <p>
-        Next.js é um framework para React que permite renderização do lado do
-        servidor e geração de sites estáticos. Para iniciar um projeto com
-        Next.js, siga os passos abaixo:
-      </p>
-      <pre><code>// 1. Crie um novo projeto usando o template Next.js
-npx create-next-app@latest nome-do-seu-projeto
-
-// 2. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 3. Inicie o servidor de desenvolvimento
-npm run dev
-      </code></pre>
-
-      <h2>4. Usando Vue CLI</h2>
-      <p>
-        Vue CLI é uma ferramenta oficial para scaffolding de projetos Vue.js.
-        Para criar um projeto com Vue CLI, siga os passos abaixo:
-      </p>
-      <pre><code>// 1. Instale Vue CLI globalmente
-npm install -g @vue/cli
-
-// 2. Crie um novo projeto
-vue create nome-do-seu-projeto
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Inicie o servidor de desenvolvimento
-npm run serve
-      </code></pre>
-
-      <h2>5. Usando Angular CLI</h2>
-      <p>
-        Angular CLI é uma ferramenta oficial para criar e gerenciar projetos
-        Angular. Para criar um projeto com Angular CLI, siga os passos abaixo:
-      </p>
-      <pre><code>// 1. Instale Angular CLI globalmente
-npm install -g @angular/cli
-
-// 2. Crie um novo projeto
-ng new nome-do-seu-projeto
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Inicie o servidor de desenvolvimento
-ng serve
-      </code></pre>
-    </main>
+    
+        <p>
+          CSS (Cascading Style Sheets) é uma linguagem que define o estilo e layout das páginas web. Com o CSS, você pode controlar a cor do texto, o espaçamento entre elementos, a disposição dos itens na página e muito mais. Nesta trilha, você aprenderá os conceitos básicos do CSS e como aplicá-los para criar designs responsivos e atraentes.
+        </p>
+      
+        <h2>1. O que é CSS?</h2>
+        <p>
+          CSS é uma linguagem usada para descrever a aparência e o layout de uma página web. Ele funciona em conjunto com o HTML para controlar como os elementos são exibidos. Para uma introdução ao CSS, visite: <a href="/introducao-css">Introdução ao CSS</a>.
+        </p>
+      
+        <h2>2. Como Incluir CSS em sua Página</h2>
+        <p>Há várias maneiras de adicionar CSS a uma página HTML. Aqui estão as três mais comuns:</p>
+        
+        <h3>2.1. CSS Inline</h3>
+        <p>
+          O CSS inline é aplicado diretamente no elemento HTML. Exemplo:
+        </p>
+        <pre>
+          <code>
+          &lt;p style="color: red;"&gt;Este texto está em vermelho&lt;/p&gt;
+          </code>
+        </pre>
+        <p>
+          Apesar de ser simples, o CSS inline não é recomendado para grandes projetos, pois pode dificultar a manutenção do código.
+        </p>
+      
+        <h3>2.2. CSS Interno (no &lt;head&gt;)</h3>
+        <p>
+          O CSS interno é adicionado dentro da tag <strong>&lt;style&gt;</strong> no <strong>&lt;head&gt;</strong> do documento HTML. Exemplo:
+        </p>
+        <pre>
+          <code>
+          &lt;head&gt;
+            &lt;style&gt;
+              p {
+                color: blue;
+              }
+            &lt;/style&gt;
+          &lt;/head&gt;
+          </code>
+        </pre>
+      
+        <h3>2.3. CSS Externo</h3>
+        <p>
+          A maneira mais recomendada de adicionar CSS é usando um arquivo CSS externo. Você cria um arquivo separado com a extensão <strong>.css</strong> e o referencia dentro do HTML com a tag <strong>&lt;link&gt;</strong>:
+        </p>
+        <pre>
+          <code>
+          &lt;link rel="stylesheet" href="styles.css"&gt;
+          </code>
+        </pre>
+        <p>
+          Isso facilita a organização e reutilização dos estilos em várias páginas.
+        </p>
+      
+        <h2>3. Seletores e Propriedades no CSS</h2>
+        <p>
+          Seletores são usados para "selecionar" os elementos HTML que você deseja estilizar. Aqui estão alguns dos seletores mais comuns:
+        </p>
+        <ul>
+          <li><strong>Seletores de Tag:</strong> Afetam todos os elementos de uma determinada tag. Exemplo: <code>p { color: green; }</code></li>
+          <li><strong>Seletores de Classe:</strong> Afetam elementos com uma classe específica. Exemplo: <code>.minha-classe { font-size: 20px; }</code></li>
+          <li><strong>Seletores de ID:</strong> Afetam um elemento com um ID específico. Exemplo: <code>#meu-id { background-color: yellow; }</code></li>
+        </ul>
+        <p>
+          Para mais detalhes sobre seletores, visite: <a href="/seletores-css">Seletores CSS</a>.
+        </p>
+      
+        <h2>4. Box Model (Modelo de Caixa)</h2>
+        <p>
+          Todo elemento HTML é representado como uma "caixa" retangular no CSS. O box model é um conceito fundamental para entender o layout de elementos na página. Ele é composto por:
+        </p>
+        <ul>
+          <li><strong>Margem (Margin):</strong> Espaçamento externo ao redor da caixa.</li>
+          <li><strong>Borda (Border):</strong> A borda ao redor da caixa.</li>
+          <li><strong>Preenchimento (Padding):</strong> Espaçamento interno dentro da caixa.</li>
+          <li><strong>Conteúdo (Content):</strong> O próprio conteúdo, como texto ou imagens.</li>
+        </ul>
+        <p>
+          Para entender melhor o Box Model, acesse: <a href="/box-model">Box Model no CSS</a>.
+        </p>
+      
+        <h2>5. Layout Responsivo com CSS</h2>
+        <p>
+          Um dos grandes desafios no desenvolvimento web é garantir que seu site fique bem em diferentes tamanhos de tela. Para isso, usamos técnicas de design responsivo, como:
+        </p>
+        <ul>
+          <li><strong>Media Queries:</strong> Permitem que você aplique estilos específicos para diferentes tamanhos de tela.</li>
+          <li><strong>Flexbox:</strong> Um modelo de layout flexível que facilita o alinhamento e a distribuição de elementos em uma página.</li>
+          <li><strong>Grid Layout:</strong> Um sistema de grade bidimensional que permite a criação de layouts complexos.</li>
+        </ul>
+        <p>
+          Para aprender a criar layouts responsivos, visite: <a href="/css-responsivo">CSS Responsivo</a>.
+        </p>
+      
+        <h2>6. Dicas para Aprender CSS</h2>
+        <ol>
+          <li>
+            <strong>Pratique com Pequenos Projetos:</strong> Crie páginas simples para testar diferentes estilos e layouts. A prática constante é essencial.
+          </li>
+          <li>
+            <strong>Use Ferramentas de Desenvolvimento:</strong> Explore as ferramentas de desenvolvimento dos navegadores (como o "Inspetor" no Chrome) para testar e modificar seu CSS em tempo real.
+          </li>
+          <li>
+            <strong>Explore o CSS Frameworks:</strong> Quando estiver confortável com o básico, explore frameworks como Bootstrap ou Tailwind CSS para acelerar o desenvolvimento de layouts complexos.
+          </li>
+        </ol>
+      
+        <h2>Conclusão</h2>
+        <p>
+          CSS é uma habilidade essencial para qualquer desenvolvedor front-end. Ao aprender e praticar o uso de seletores, propriedades, Box Model, e design responsivo, você será capaz de criar sites bonitos e funcionais. Continue sua jornada e não se esqueça de consultar sempre a documentação oficial do <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">MDN Web Docs</a> para mais informações detalhadas.
+        </p>
+      </main>
+      
 
     <footer class="cursor-bgblack">
       <div class="footer-header container flex-space-between">

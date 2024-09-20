@@ -129,24 +129,6 @@
       type="image/x-icon"
       href="../../../../assets/icon/favicon.ico"
     />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-      }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-      pre {
-        background-color: #f4f4f4;
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        overflow-x: auto;
-      }
-    </style>
     <title>Elias Gabe || gabe ajuda (ou tenta)</title>
   </head>
 
@@ -163,7 +145,7 @@
             class="container container__header"
             style="display: flex; justify-content: space-between"
           >
-          <a href="../../index.html">
+            <a href="../Projetos.html">
               <svg
                 class="logo"
                 width="111"
@@ -302,108 +284,131 @@
         <div class="d-grid-banner-index">
           <div class="d-grid-banner-index-column-2">
             <p>Duvidas comuns</p>
-            <h1>fiz essa página só de duvidas comuns</h1>
+            <h1>Como iniciar no uso de bancos de dados e SQLite</h1>
           </div>
         </div>
       </div>
     </header>
 
     <main class="container">
-      <h1>Maneiras de Iniciar um Projeto</h1>
       <p>
-        Existem várias maneiras de iniciar um projeto moderno de JavaScript.
-        Aqui estão alguns dos métodos mais comuns:
+        Quando desenvolvemos uma API ou aplicação que lida com dados, utilizar
+        um banco de dados é essencial para armazenar e recuperar informações. O
+        SQLite é uma excelente opção para projetos que precisam de um banco de
+        dados leve e sem a complexidade de um servidor. Ele é embutido, fácil de
+        usar e não requer configurações adicionais.
       </p>
 
-      <h2>1. Usando Vite</h2>
+      <h2>Por que usar SQLite?</h2>
       <p>
-        Vite é uma ferramenta de build que visa fornecer um ambiente de
-        desenvolvimento mais rápido e enxuto para projetos modernos de
-        front-end. Para criar um projeto com Vite, siga os passos abaixo:
+        O SQLite é um sistema de banco de dados relacional autônomo e embutido.
+        É ideal para pequenos projetos, protótipos ou até mesmo para aplicações
+        com um número reduzido de usuários. Ele não requer a instalação de um
+        servidor separado, e todos os dados são armazenados em um único arquivo,
+        o que facilita o transporte e a integração em ambientes menores.
       </p>
-      <pre><code>// 1. Instale o Vite globalmente (opcional)
-npm install -g create-vite
+      <ol>
+        <li>
+          <strong>Leveza:</strong> O SQLite é extremamente leve, o que o torna
+          ideal para aplicações que rodam em dispositivos com pouca capacidade
+          de processamento ou armazenamento.
+        </li>
+        <li>
+          <strong>Autossuficiência:</strong> Diferente de outros bancos, como
+          MySQL ou PostgreSQL, o SQLite não precisa de um servidor de banco de
+          dados rodando. Todos os dados são armazenados localmente em um arquivo
+          único.
+        </li>
+        <li>
+          <strong>Fácil integração:</strong> O SQLite é bem suportado em vários
+          ambientes e linguagens, incluindo Node.js, o que facilita sua
+          utilização em diferentes tipos de projetos.
+        </li>
+      </ol>
 
-// 2. Crie um novo projeto
-npm create vite@latest
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Instale as dependências
-npm install
-
-// 5. Inicie o servidor de desenvolvimento
-npm run dev
-      </code></pre>
-
-      <h2>2. Usando Create React App</h2>
+      <h2>Como configurar SQLite em um projeto Node.js</h2>
       <p>
-        Create React App é uma ferramenta oficial do React para criar um novo
-        projeto com uma configuração inicial pronta. Siga os passos abaixo para
-        criar um projeto com Create React App:
+        A seguir, veremos como integrar o SQLite em um projeto Node.js.
+        Utilizaremos o pacote <code>sqlite3</code> para conectar e interagir com
+        o banco de dados.
       </p>
-      <pre><code>// 1. Crie um novo projeto usando Create React App
-npx create-react-app nome-do-seu-projeto
-
-// 2. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 3. Inicie o servidor de desenvolvimento
-npm start
-      </code></pre>
-
-      <h2>3. Usando Next.js</h2>
-      <p>
-        Next.js é um framework para React que permite renderização do lado do
-        servidor e geração de sites estáticos. Para iniciar um projeto com
-        Next.js, siga os passos abaixo:
-      </p>
-      <pre><code>// 1. Crie um novo projeto usando o template Next.js
-npx create-next-app@latest nome-do-seu-projeto
-
-// 2. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 3. Inicie o servidor de desenvolvimento
-npm run dev
-      </code></pre>
-
-      <h2>4. Usando Vue CLI</h2>
-      <p>
-        Vue CLI é uma ferramenta oficial para scaffolding de projetos Vue.js.
-        Para criar um projeto com Vue CLI, siga os passos abaixo:
-      </p>
-      <pre><code>// 1. Instale Vue CLI globalmente
-npm install -g @vue/cli
-
-// 2. Crie um novo projeto
-vue create nome-do-seu-projeto
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Inicie o servidor de desenvolvimento
-npm run serve
-      </code></pre>
-
-      <h2>5. Usando Angular CLI</h2>
-      <p>
-        Angular CLI é uma ferramenta oficial para criar e gerenciar projetos
-        Angular. Para criar um projeto com Angular CLI, siga os passos abaixo:
-      </p>
-      <pre><code>// 1. Instale Angular CLI globalmente
-npm install -g @angular/cli
-
-// 2. Crie um novo projeto
-ng new nome-do-seu-projeto
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Inicie o servidor de desenvolvimento
-ng serve
-      </code></pre>
+      <ol>
+        <li>
+          <strong>Instalar o SQLite:</strong> Certifique-se de que seu projeto
+          Node.js está configurado e instale o pacote <code>sqlite3</code> com o
+          seguinte comando:
+          <pre><code>npm install sqlite3</code></pre>
+        </li>
+        <li>
+          <strong>Criar e conectar ao banco de dados:</strong> Agora, vamos
+          criar um arquivo <code>database.js</code> e conectar ao banco de
+          dados. O banco será armazenado em um arquivo chamado
+          <code>database.db</code>:
+          <pre><code>
+      const sqlite3 = require('sqlite3').verbose();
+      const db = new sqlite3.Database('./database.db');
+      
+      db.serialize(() => {
+        console.log('Conectado ao banco de dados SQLite.');
+      });
+      
+      db.close((err) => {
+        if (err) {
+          console.error(err.message);
+        }
+        console.log('Conexão com o banco de dados fechada.');
+      });
+            </code></pre>
+          O código acima cria uma conexão com um arquivo de banco de dados
+          chamado <code>database.db</code>. Se esse arquivo não existir, ele
+          será criado automaticamente.
+        </li>
+        <li>
+          <strong>Criando uma tabela:</strong> Para armazenar dados, você
+          precisa criar uma tabela. No SQLite, isso é feito utilizando SQL.
+          Vamos criar uma tabela chamada <code>users</code>:
+          <pre><code>
+      db.serialize(() => {
+        db.run(`CREATE TABLE IF NOT EXISTS users (
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          name TEXT NOT NULL,
+          email TEXT NOT NULL UNIQUE
+        )`);
+        console.log('Tabela "users" criada com sucesso.');
+      });
+            </code></pre>
+          Este comando cria uma tabela com colunas para <code>id</code>,
+          <code>name</code>, e <code>email</code>.
+        </li>
+        <li>
+          <strong>Inserindo dados na tabela:</strong> Para inserir dados na
+          tabela <code>users</code>, usamos o comando <code>INSERT</code>:
+          <pre><code>
+      db.serialize(() => {
+        const stmt = db.prepare('INSERT INTO users (name, email) VALUES (?, ?)');
+        stmt.run('João Silva', 'joao@example.com');
+        stmt.run('Maria Oliveira', 'maria@example.com');
+        stmt.finalize();
+        
+        console.log('Dados inseridos com sucesso.');
+      });
+            </code></pre>
+        </li>
+        <li>
+          <strong>Consultando dados:</strong> Para recuperar dados da tabela,
+          usamos o comando <code>SELECT</code>:
+          <pre><code>
+      db.serialize(() => {
+        db.each('SELECT id, name, email FROM users', (err, row) => {
+          if (err) {
+            throw err;
+          }
+          console.log(`${row.id}: ${row.name} - ${row.email}`);
+        });
+      });
+            </code></pre>
+        </li>
+      </ol>
     </main>
 
     <footer class="cursor-bgblack">

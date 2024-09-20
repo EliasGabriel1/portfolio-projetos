@@ -129,24 +129,6 @@
       type="image/x-icon"
       href="../../../../assets/icon/favicon.ico"
     />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-      }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-      pre {
-        background-color: #f4f4f4;
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        overflow-x: auto;
-      }
-    </style>
     <title>Elias Gabe || gabe ajuda (ou tenta)</title>
   </head>
 
@@ -302,108 +284,226 @@
         <div class="d-grid-banner-index">
           <div class="d-grid-banner-index-column-2">
             <p>Duvidas comuns</p>
-            <h1>fiz essa página só de duvidas comuns</h1>
+            <h1>Como Iniciar no JavaScript</h1> 
           </div>
         </div>
       </div>
     </header>
 
     <main class="container">
-      <h1>Maneiras de Iniciar um Projeto</h1>
+      <h1>Como Iniciar no JavaScript</h1>
       <p>
-        Existem várias maneiras de iniciar um projeto moderno de JavaScript.
-        Aqui estão alguns dos métodos mais comuns:
+        JavaScript é uma das linguagens de programação mais populares e
+        essenciais para o desenvolvimento web. Com ele, você pode tornar suas
+        páginas interativas, desde a validação de formulários até a criação de
+        aplicações complexas de uma página (Single Page Applications). Nesta
+        trilha, você aprenderá os conceitos básicos de JavaScript e como começar
+        a programar.
       </p>
 
-      <h2>1. Usando Vite</h2>
+      <h2>1. O que é JavaScript?</h2>
       <p>
-        Vite é uma ferramenta de build que visa fornecer um ambiente de
-        desenvolvimento mais rápido e enxuto para projetos modernos de
-        front-end. Para criar um projeto com Vite, siga os passos abaixo:
+        JavaScript (JS) é uma linguagem de programação usada principalmente para
+        criar interatividade em páginas web. Ele é executado diretamente no
+        navegador do usuário, permitindo a criação de aplicações dinâmicas. Para
+        mais informações sobre o que é JavaScript, acesse:
+        <a href="/introducao-javascript">Introdução ao JavaScript</a>.
       </p>
-      <pre><code>// 1. Instale o Vite globalmente (opcional)
-npm install -g create-vite
 
-// 2. Crie um novo projeto
-npm create vite@latest
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Instale as dependências
-npm install
-
-// 5. Inicie o servidor de desenvolvimento
-npm run dev
-      </code></pre>
-
-      <h2>2. Usando Create React App</h2>
+      <h2>2. Como Adicionar JavaScript em Sua Página</h2>
       <p>
-        Create React App é uma ferramenta oficial do React para criar um novo
-        projeto com uma configuração inicial pronta. Siga os passos abaixo para
-        criar um projeto com Create React App:
+        Há diferentes maneiras de incluir JavaScript em um documento HTML. Aqui
+        estão as três principais formas:
       </p>
-      <pre><code>// 1. Crie um novo projeto usando Create React App
-npx create-react-app nome-do-seu-projeto
 
-// 2. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 3. Inicie o servidor de desenvolvimento
-npm start
-      </code></pre>
-
-      <h2>3. Usando Next.js</h2>
+      <h3>2.1. JavaScript Inline</h3>
       <p>
-        Next.js é um framework para React que permite renderização do lado do
-        servidor e geração de sites estáticos. Para iniciar um projeto com
-        Next.js, siga os passos abaixo:
+        Você pode adicionar JavaScript diretamente em um elemento HTML usando o
+        atributo <code>onclick</code>, por exemplo:
       </p>
-      <pre><code>// 1. Crie um novo projeto usando o template Next.js
-npx create-next-app@latest nome-do-seu-projeto
-
-// 2. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 3. Inicie o servidor de desenvolvimento
-npm run dev
-      </code></pre>
-
-      <h2>4. Usando Vue CLI</h2>
+      <pre>
+          <code>
+          &lt;button onclick="alert('Olá, Mundo!')"&gt;Clique em mim&lt;/button&gt;
+          </code>
+        </pre>
       <p>
-        Vue CLI é uma ferramenta oficial para scaffolding de projetos Vue.js.
-        Para criar um projeto com Vue CLI, siga os passos abaixo:
+        Apesar de simples, esse método não é recomendado para grandes projetos,
+        pois dificulta a manutenção do código.
       </p>
-      <pre><code>// 1. Instale Vue CLI globalmente
-npm install -g @vue/cli
 
-// 2. Crie um novo projeto
-vue create nome-do-seu-projeto
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Inicie o servidor de desenvolvimento
-npm run serve
-      </code></pre>
-
-      <h2>5. Usando Angular CLI</h2>
+      <h3>2.2. JavaScript Interno (no &lt;script&gt;)</h3>
       <p>
-        Angular CLI é uma ferramenta oficial para criar e gerenciar projetos
-        Angular. Para criar um projeto com Angular CLI, siga os passos abaixo:
+        Você pode escrever JavaScript dentro de uma tag
+        <strong>&lt;script&gt;</strong> no documento HTML. Exemplo:
       </p>
-      <pre><code>// 1. Instale Angular CLI globalmente
-npm install -g @angular/cli
+      <pre>
+          <code>
+          &lt;script&gt;
+            function exibirMensagem() {
+              alert('Bem-vindo ao JavaScript!');
+            }
+          &lt;/script&gt;
+          </code>
+        </pre>
 
-// 2. Crie um novo projeto
-ng new nome-do-seu-projeto
+      <h3>2.3. JavaScript Externo</h3>
+      <p>
+        A maneira mais recomendada de adicionar JavaScript é usando um arquivo
+        externo com a extensão <strong>.js</strong> e vinculá-lo ao HTML usando
+        a tag <strong>&lt;script&gt;</strong>:
+      </p>
+      <pre>
+          <code>
+          &lt;script src="script.js"&gt;&lt;/script&gt;
+          </code>
+        </pre>
+      <p>
+        Isso mantém o código mais organizado e permite reutilização em várias
+        páginas.
+      </p>
 
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
+      <h2>3. Conceitos Básicos de JavaScript</h2>
+      <p>
+        Antes de criar projetos maiores, é importante dominar alguns conceitos
+        básicos:
+      </p>
 
-// 4. Inicie o servidor de desenvolvimento
-ng serve
-      </code></pre>
+      <h3>3.1. Variáveis</h3>
+      <p>
+        Variáveis são usadas para armazenar dados. No JavaScript, você pode
+        criar variáveis usando <code>var</code>, <code>let</code>, ou
+        <code>const</code>:
+      </p>
+      <pre>
+          <code>
+          let nome = "João";
+          const idade = 25;
+          var cidade = "São Paulo";
+          </code>
+        </pre>
+      <p>
+        Para aprender mais sobre variáveis, acesse:
+        <a href="/variaveis-javascript">Variáveis no JavaScript</a>.
+      </p>
+
+      <h3>3.2. Funções</h3>
+      <p>
+        Funções são blocos de código reutilizáveis. Você pode definir uma função
+        assim:
+      </p>
+      <pre>
+          <code>
+          function saudacao() {
+            alert('Olá, Mundo!');
+          }
+          </code>
+        </pre>
+      <p>
+        Para aprender mais sobre funções, visite:
+        <a href="/funcoes-javascript">Funções no JavaScript</a>.
+      </p>
+
+      <h3>3.3. Condicionais</h3>
+      <p>
+        Condicionais permitem que o JavaScript tome decisões com base em certas
+        condições:
+      </p>
+      <pre>
+          <code>
+          if (idade >= 18) {
+            console.log('Maior de idade');
+          } else {
+            console.log('Menor de idade');
+          }
+          </code>
+        </pre>
+      <p>
+        Para aprender mais sobre condicionais, acesse:
+        <a href="/condicionais-javascript">Condicionais no JavaScript</a>.
+      </p>
+
+      <h3>3.4. Loops</h3>
+      <p>
+        Loops permitem executar um bloco de código repetidamente. Um exemplo
+        simples de um loop <code>for</code>:
+      </p>
+      <pre>
+          <code>
+          for (let i = 0; i < 5; i++) {
+            console.log(i);
+          }
+          </code>
+        </pre>
+      <p>
+        Para aprender mais sobre loops, visite:
+        <a href="/loops-javascript">Loops no JavaScript</a>.
+      </p>
+
+      <h2>4. Manipulação do DOM</h2>
+      <p>
+        O DOM (Document Object Model) é a estrutura da página web que o
+        JavaScript pode manipular para alterar a aparência ou comportamento dos
+        elementos. Você pode, por exemplo, alterar o conteúdo de um elemento com
+        <code>document.getElementById</code>:
+      </p>
+      <pre>
+          <code>
+          document.getElementById("meuElemento").innerHTML = "Novo Conteúdo";
+          </code>
+        </pre>
+      <p>
+        Para aprender mais sobre manipulação do DOM, acesse:
+        <a href="/dom-javascript">Manipulação do DOM</a>.
+      </p>
+
+      <h2>5. Eventos em JavaScript</h2>
+      <p>
+        Eventos são ações que ocorrem na página, como cliques, carregamento ou
+        pressionar uma tecla. Você pode responder a eventos com JavaScript.
+        Exemplo de um evento de clique:
+      </p>
+      <pre>
+          <code>
+          document.getElementById("meuBotao").addEventListener("click", function() {
+            alert('Botão clicado!');
+          });
+          </code>
+        </pre>
+      <p>
+        Para aprender mais sobre eventos, visite:
+        <a href="/eventos-javascript">Eventos no JavaScript</a>.
+      </p>
+
+      <h2>6. Dicas para Aprender JavaScript</h2>
+      <ol>
+        <li>
+          <strong>Pratique Sempre:</strong> A prática é fundamental para
+          entender JavaScript. Faça pequenos projetos, como uma calculadora ou
+          um jogo simples.
+        </li>
+        <li>
+          <strong>Use a Consola do Navegador:</strong> Acesse o console no
+          navegador (geralmente pressionando F12) para testar pequenos trechos
+          de código e ver os resultados rapidamente.
+        </li>
+        <li>
+          <strong>Participe de Comunidades:</strong> Junte-se a fóruns e
+          comunidades como Stack Overflow ou grupos no GitHub para tirar dúvidas
+          e aprender com outros desenvolvedores.
+        </li>
+      </ol>
+
+      <h2>Conclusão</h2>
+      <p>
+        JavaScript é uma ferramenta poderosa para quem deseja criar sites
+        dinâmicos e interativos. Comece com os conceitos básicos, como
+        variáveis, funções e manipulação do DOM, e pratique regularmente para
+        melhorar suas habilidades. Para mais detalhes e exemplos práticos,
+        consulte a documentação oficial do
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+          >MDN Web Docs</a
+        >.
+      </p>
     </main>
 
     <footer class="cursor-bgblack">

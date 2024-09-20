@@ -129,24 +129,6 @@
       type="image/x-icon"
       href="../../../../assets/icon/favicon.ico"
     />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-      }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-      pre {
-        background-color: #f4f4f4;
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        overflow-x: auto;
-      }
-    </style>
     <title>Elias Gabe || gabe ajuda (ou tenta)</title>
   </head>
 
@@ -163,7 +145,7 @@
             class="container container__header"
             style="display: flex; justify-content: space-between"
           >
-          <a href="../../index.html">
+            <a href="../Projetos.html">
               <svg
                 class="logo"
                 width="111"
@@ -302,108 +284,61 @@
         <div class="d-grid-banner-index">
           <div class="d-grid-banner-index-column-2">
             <p>Duvidas comuns</p>
-            <h1>fiz essa página só de duvidas comuns</h1>
+            <h1>Trilha para o Básico</h1>
           </div>
         </div>
       </div>
     </header>
 
     <main class="container">
-      <h1>Maneiras de Iniciar um Projeto</h1>
+      <h1>Como iniciar um projeto Node.js</h1>
       <p>
-        Existem várias maneiras de iniciar um projeto moderno de JavaScript.
-        Aqui estão alguns dos métodos mais comuns:
+        Iniciar um projeto com Node.js é o primeiro passo para criar APIs, sites
+        dinâmicos ou aplicativos que possam lidar com um grande número de
+        requisições de forma rápida e eficiente. Node.js, sendo uma plataforma
+        baseada em JavaScript no lado do servidor, oferece muitas vantagens para
+        desenvolvedores que desejam construir projetos escaláveis e de alta
+        performance. Vamos abordar como iniciar um projeto do zero, configurando
+        o ambiente e instalando as dependências necessárias.
       </p>
 
-      <h2>1. Usando Vite</h2>
+      <h2>Passos para iniciar um projeto Node.js</h2>
       <p>
-        Vite é uma ferramenta de build que visa fornecer um ambiente de
-        desenvolvimento mais rápido e enxuto para projetos modernos de
-        front-end. Para criar um projeto com Vite, siga os passos abaixo:
+        Os passos abaixo irão guiá-lo pela criação de um projeto básico em
+        Node.js:
       </p>
-      <pre><code>// 1. Instale o Vite globalmente (opcional)
-npm install -g create-vite
-
-// 2. Crie um novo projeto
-npm create vite@latest
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Instale as dependências
-npm install
-
-// 5. Inicie o servidor de desenvolvimento
-npm run dev
+      <ol>
+        <li>
+          <strong>Instalando o Node.js:</strong>
+          Primeiramente, é necessário instalar o Node.js no seu computador.
+          Acesse o site oficial (<a href="https://nodejs.org/"
+            >https://nodejs.org/</a
+          >) e baixe a versão adequada para o seu sistema operacional.
+        </li>
+        <li>
+          <strong>Inicializando o projeto:</strong>
+          Após a instalação do Node.js, abra o terminal e crie uma pasta para o
+          seu projeto. Em seguida, use o comando <code>npm init</code> para
+          iniciar o projeto e gerar o arquivo <code>package.json</code>, que
+          armazenará as informações e dependências do projeto.
+          <pre><code>
+      mkdir meu-projeto
+      cd meu-projeto
+      npm init -y
       </code></pre>
-
-      <h2>2. Usando Create React App</h2>
-      <p>
-        Create React App é uma ferramenta oficial do React para criar um novo
-        projeto com uma configuração inicial pronta. Siga os passos abaixo para
-        criar um projeto com Create React App:
-      </p>
-      <pre><code>// 1. Crie um novo projeto usando Create React App
-npx create-react-app nome-do-seu-projeto
-
-// 2. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 3. Inicie o servidor de desenvolvimento
-npm start
-      </code></pre>
-
-      <h2>3. Usando Next.js</h2>
-      <p>
-        Next.js é um framework para React que permite renderização do lado do
-        servidor e geração de sites estáticos. Para iniciar um projeto com
-        Next.js, siga os passos abaixo:
-      </p>
-      <pre><code>// 1. Crie um novo projeto usando o template Next.js
-npx create-next-app@latest nome-do-seu-projeto
-
-// 2. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 3. Inicie o servidor de desenvolvimento
-npm run dev
-      </code></pre>
-
-      <h2>4. Usando Vue CLI</h2>
-      <p>
-        Vue CLI é uma ferramenta oficial para scaffolding de projetos Vue.js.
-        Para criar um projeto com Vue CLI, siga os passos abaixo:
-      </p>
-      <pre><code>// 1. Instale Vue CLI globalmente
-npm install -g @vue/cli
-
-// 2. Crie um novo projeto
-vue create nome-do-seu-projeto
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Inicie o servidor de desenvolvimento
-npm run serve
-      </code></pre>
-
-      <h2>5. Usando Angular CLI</h2>
-      <p>
-        Angular CLI é uma ferramenta oficial para criar e gerenciar projetos
-        Angular. Para criar um projeto com Angular CLI, siga os passos abaixo:
-      </p>
-      <pre><code>// 1. Instale Angular CLI globalmente
-npm install -g @angular/cli
-
-// 2. Crie um novo projeto
-ng new nome-do-seu-projeto
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Inicie o servidor de desenvolvimento
-ng serve
-      </code></pre>
+          Isso criará o arquivo <code>package.json</code> com uma configuração
+          básica.
+        </li>
+        <li>
+          <strong>Instalando dependências:</strong>
+          Para começar a construir seu projeto, você pode precisar de pacotes
+          adicionais como Express (um framework popular para Node.js). Para
+          instalar o Express, execute o comando:
+          <pre><code>npm install express</code></pre>
+          Isso adicionará o Express ao seu projeto, permitindo criar servidores
+          e rotas com facilidade.
+        </li>
+      </ol>
     </main>
 
     <footer class="cursor-bgblack">

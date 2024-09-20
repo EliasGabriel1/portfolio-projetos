@@ -129,24 +129,6 @@
       type="image/x-icon"
       href="../../../../assets/icon/favicon.ico"
     />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-      }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-      pre {
-        background-color: #f4f4f4;
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        overflow-x: auto;
-      }
-    </style>
     <title>Elias Gabe || gabe ajuda (ou tenta)</title>
   </head>
 
@@ -302,108 +284,92 @@
         <div class="d-grid-banner-index">
           <div class="d-grid-banner-index-column-2">
             <p>Duvidas comuns</p>
-            <h1>fiz essa página só de duvidas comuns</h1>
+            <h1>Configurando o GitHub Pages</h1>
           </div>
         </div>
       </div>
     </header>
 
     <main class="container">
-      <h1>Maneiras de Iniciar um Projeto</h1>
       <p>
-        Existem várias maneiras de iniciar um projeto moderno de JavaScript.
-        Aqui estão alguns dos métodos mais comuns:
+        O GitHub Pages permite que você hospede sites diretamente a partir de um
+        repositório no GitHub. Neste guia, você aprenderá como configurar o
+        GitHub Pages para o seu projeto.
       </p>
 
-      <h2>1. Usando Vite</h2>
+      <h2>
+        <strong>Passo 1</strong>: Acessando as Configurações do Repositório
+      </h2>
       <p>
-        Vite é uma ferramenta de build que visa fornecer um ambiente de
-        desenvolvimento mais rápido e enxuto para projetos modernos de
-        front-end. Para criar um projeto com Vite, siga os passos abaixo:
+        Primeiro, você precisa acessar as configurações do seu repositório. Para
+        isso:
       </p>
-      <pre><code>// 1. Instale o Vite globalmente (opcional)
-npm install -g create-vite
+      <ol>
+        <li>
+          Faça login na sua conta do GitHub e acesse o repositório que deseja
+          configurar.
+        </li>
+        <li>
+          Na parte superior da página, clique em <strong>Settings</strong>.
+        </li>
+      </ol>
 
-// 2. Crie um novo projeto
-npm create vite@latest
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Instale as dependências
-npm install
-
-// 5. Inicie o servidor de desenvolvimento
-npm run dev
-      </code></pre>
-
-      <h2>2. Usando Create React App</h2>
+      <h2><strong>Passo 2</strong>: Configurando o GitHub Pages</h2>
       <p>
-        Create React App é uma ferramenta oficial do React para criar um novo
-        projeto com uma configuração inicial pronta. Siga os passos abaixo para
-        criar um projeto com Create React App:
+        No repositório, vá em <em>Settings</em> > <em>Pages</em> e escolha a
+        branch principal para hospedar o site no GitHub Pages. Para isso:
       </p>
-      <pre><code>// 1. Crie um novo projeto usando Create React App
-npx create-react-app nome-do-seu-projeto
+      <ol>
+        <li>
+          Na seção <strong>Source</strong>, selecione a branch que você deseja
+          usar (normalmente <strong>main</strong> ou <strong>gh-pages</strong>).
+        </li>
+        <li>
+          Se você tiver um diretório específico onde os arquivos HTML estão
+          armazenados, selecione-o na lista suspensa.
+        </li>
+        <li>Clique em <strong>Save</strong> para aplicar as alterações.</li>
+      </ol>
 
-// 2. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 3. Inicie o servidor de desenvolvimento
-npm start
-      </code></pre>
-
-      <h2>3. Usando Next.js</h2>
+      <h2>3. Confirmando a Configuração</h2>
       <p>
-        Next.js é um framework para React que permite renderização do lado do
-        servidor e geração de sites estáticos. Para iniciar um projeto com
-        Next.js, siga os passos abaixo:
+        Após salvar, uma mensagem de confirmação aparecerá, informando que o
+        GitHub Pages foi configurado. O endereço do seu site será fornecido
+        nessa mesma seção.
       </p>
-      <pre><code>// 1. Crie um novo projeto usando o template Next.js
-npx create-next-app@latest nome-do-seu-projeto
 
-// 2. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 3. Inicie o servidor de desenvolvimento
-npm run dev
-      </code></pre>
-
-      <h2>4. Usando Vue CLI</h2>
+      <h2>4. Acessando Seu Site</h2>
       <p>
-        Vue CLI é uma ferramenta oficial para scaffolding de projetos Vue.js.
-        Para criar um projeto com Vue CLI, siga os passos abaixo:
+        Após a configuração, você pode acessar seu site em
+        <strong>https://usuario.github.io/nome-do-repositorio</strong>.
+        Lembre-se de substituir "usuario" e "nome-do-repositorio" pelos seus
+        dados.
       </p>
-      <pre><code>// 1. Instale Vue CLI globalmente
-npm install -g @vue/cli
 
-// 2. Crie um novo projeto
-vue create nome-do-seu-projeto
+      <h2>5. Dicas e Melhorias</h2>
+      <ul>
+        <li>
+          Verifique se o arquivo <strong>index.html</strong> está na raiz do
+          repositório ou no diretório que você selecionou.
+        </li>
+        <li>
+          Use o arquivo <strong>README.md</strong> para documentar seu projeto e
+          fornecer informações úteis.
+        </li>
+        <li>
+          Considere personalizar a aparência do seu site utilizando CSS e
+          JavaScript.
+        </li>
+      </ul>
 
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Inicie o servidor de desenvolvimento
-npm run serve
-      </code></pre>
-
-      <h2>5. Usando Angular CLI</h2>
+      <h2>6. Conclusão</h2>
       <p>
-        Angular CLI é uma ferramenta oficial para criar e gerenciar projetos
-        Angular. Para criar um projeto com Angular CLI, siga os passos abaixo:
+        Configurar o GitHub Pages é uma maneira excelente de compartilhar seus
+        projetos com o mundo. Para mais informações sobre como configurar o
+        GitHub Pages, acesse:
+        <a href="github/github-pages-configurar.html">GitHub Pages Configurar</a
+        >.
       </p>
-      <pre><code>// 1. Instale Angular CLI globalmente
-npm install -g @angular/cli
-
-// 2. Crie um novo projeto
-ng new nome-do-seu-projeto
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Inicie o servidor de desenvolvimento
-ng serve
-      </code></pre>
     </main>
 
     <footer class="cursor-bgblack">

@@ -129,24 +129,6 @@
       type="image/x-icon"
       href="../../../../assets/icon/favicon.ico"
     />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-      }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-      pre {
-        background-color: #f4f4f4;
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        overflow-x: auto;
-      }
-    </style>
     <title>Elias Gabe || gabe ajuda (ou tenta)</title>
   </head>
 
@@ -163,7 +145,7 @@
             class="container container__header"
             style="display: flex; justify-content: space-between"
           >
-          <a href="../../index.html">
+            <a href="../Projetos.html">
               <svg
                 class="logo"
                 width="111"
@@ -302,108 +284,95 @@
         <div class="d-grid-banner-index">
           <div class="d-grid-banner-index-column-2">
             <p>Duvidas comuns</p>
-            <h1>fiz essa página só de duvidas comuns</h1>
+            <h1>Como Iniciar com as DevTools</h1>
           </div>
         </div>
       </div>
     </header>
 
+    
     <main class="container">
-      <h1>Maneiras de Iniciar um Projeto</h1>
+      <h1>Frameworks e Bibliotecas JavaScript Populares</h1>
       <p>
-        Existem várias maneiras de iniciar um projeto moderno de JavaScript.
-        Aqui estão alguns dos métodos mais comuns:
+        O uso de frameworks e bibliotecas JavaScript pode acelerar o
+        desenvolvimento de aplicações web, oferecendo uma estrutura sólida e
+        funcionalidades pré-construídas. Neste guia, abordaremos algumas das
+        opções mais populares.
       </p>
 
-      <h2>1. Usando Vite</h2>
+      <h2>1. O que são Frameworks e Bibliotecas?</h2>
       <p>
-        Vite é uma ferramenta de build que visa fornecer um ambiente de
-        desenvolvimento mais rápido e enxuto para projetos modernos de
-        front-end. Para criar um projeto com Vite, siga os passos abaixo:
+        Frameworks e bibliotecas são conjuntos de ferramentas e códigos que
+        facilitam o desenvolvimento. Eles permitem que você escreva menos código
+        e evite problemas comuns, tornando o desenvolvimento mais eficiente.
       </p>
-      <pre><code>// 1. Instale o Vite globalmente (opcional)
-npm install -g create-vite
 
-// 2. Crie um novo projeto
-npm create vite@latest
+      <h2>2. Principais Frameworks e Bibliotecas</h2>
+      <p>Abaixo estão alguns dos frameworks e bibliotecas mais populares:</p>
+      <ul>
+        <li>
+          <strong>React:</strong> Uma biblioteca desenvolvida pelo Facebook para
+          criar interfaces de usuário. O React é baseado em componentes,
+          permitindo a reutilização de código e a construção de aplicações
+          dinâmicas. <br /><a href="https://reactjs.org/" target="_blank"
+            >Saiba mais sobre o React</a
+          >
+        </li>
+        <li>
+          <strong>Angular:</strong> Um framework completo mantido pelo Google,
+          ideal para criar aplicações web robustas. O Angular utiliza TypeScript
+          e oferece uma arquitetura baseada em componentes e serviços. <br /><a
+            href="https://angular.io/"
+            target="_blank"
+            >Saiba mais sobre o Angular</a
+          >
+        </li>
+        <li>
+          <strong>Vue.js:</strong> Um framework progressivo para a construção de
+          interfaces de usuário. O Vue é fácil de integrar em projetos
+          existentes e é altamente adaptável, com um sistema reativo simples.
+          <br /><a href="https://vuejs.org/" target="_blank"
+            >Saiba mais sobre o Vue.js</a
+          >
+        </li>
+      </ul>
 
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
+      <h2>3. Vantagens de Usar Frameworks e Bibliotecas</h2>
+      <p>Usar frameworks e bibliotecas oferece várias vantagens, como:</p>
+      <ul>
+        <li>
+          <strong>Desenvolvimento mais rápido:</strong> Com funcionalidades
+          prontas, você pode se concentrar em implementar a lógica do seu
+          projeto.
+        </li>
+        <li>
+          <strong>Manutenção simplificada:</strong> A estrutura clara facilita a
+          manutenção e a colaboração em equipe.
+        </li>
+        <li>
+          <strong>Comunidade ativa:</strong> Muitos frameworks têm comunidades
+          grandes e ativas, oferecendo suporte e recursos.
+        </li>
+      </ul>
 
-// 4. Instale as dependências
-npm install
-
-// 5. Inicie o servidor de desenvolvimento
-npm run dev
-      </code></pre>
-
-      <h2>2. Usando Create React App</h2>
+      <h2>4. Como Escolher o Framework Certo?</h2>
       <p>
-        Create React App é uma ferramenta oficial do React para criar um novo
-        projeto com uma configuração inicial pronta. Siga os passos abaixo para
-        criar um projeto com Create React App:
+        A escolha do framework depende das necessidades do seu projeto.
+        Considere fatores como:
       </p>
-      <pre><code>// 1. Crie um novo projeto usando Create React App
-npx create-react-app nome-do-seu-projeto
+      <ul>
+        <li>Complexidade do projeto</li>
+        <li>Experiência da equipe</li>
+        <li>Recursos e funcionalidades desejadas</li>
+      </ul>
 
-// 2. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 3. Inicie o servidor de desenvolvimento
-npm start
-      </code></pre>
-
-      <h2>3. Usando Next.js</h2>
+      <h2>5. Conclusão</h2>
       <p>
-        Next.js é um framework para React que permite renderização do lado do
-        servidor e geração de sites estáticos. Para iniciar um projeto com
-        Next.js, siga os passos abaixo:
+        Frameworks e bibliotecas JavaScript são essenciais para o
+        desenvolvimento moderno de aplicações web. Para saber mais sobre
+        frameworks, acesse:
+        <a href="frameworks/frameworks-aprender.html">Frameworks Aprender</a>.
       </p>
-      <pre><code>// 1. Crie um novo projeto usando o template Next.js
-npx create-next-app@latest nome-do-seu-projeto
-
-// 2. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 3. Inicie o servidor de desenvolvimento
-npm run dev
-      </code></pre>
-
-      <h2>4. Usando Vue CLI</h2>
-      <p>
-        Vue CLI é uma ferramenta oficial para scaffolding de projetos Vue.js.
-        Para criar um projeto com Vue CLI, siga os passos abaixo:
-      </p>
-      <pre><code>// 1. Instale Vue CLI globalmente
-npm install -g @vue/cli
-
-// 2. Crie um novo projeto
-vue create nome-do-seu-projeto
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Inicie o servidor de desenvolvimento
-npm run serve
-      </code></pre>
-
-      <h2>5. Usando Angular CLI</h2>
-      <p>
-        Angular CLI é uma ferramenta oficial para criar e gerenciar projetos
-        Angular. Para criar um projeto com Angular CLI, siga os passos abaixo:
-      </p>
-      <pre><code>// 1. Instale Angular CLI globalmente
-npm install -g @angular/cli
-
-// 2. Crie um novo projeto
-ng new nome-do-seu-projeto
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Inicie o servidor de desenvolvimento
-ng serve
-      </code></pre>
     </main>
 
     <footer class="cursor-bgblack">

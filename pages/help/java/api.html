@@ -129,24 +129,6 @@
       type="image/x-icon"
       href="../../../../assets/icon/favicon.ico"
     />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-      }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-      pre {
-        background-color: #f4f4f4;
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        overflow-x: auto;
-      }
-    </style>
     <title>Elias Gabe || gabe ajuda (ou tenta)</title>
   </head>
 
@@ -163,7 +145,7 @@
             class="container container__header"
             style="display: flex; justify-content: space-between"
           >
-          <a href="../../index.html">
+            <a href="../Projetos.html">
               <svg
                 class="logo"
                 width="111"
@@ -302,108 +284,150 @@
         <div class="d-grid-banner-index">
           <div class="d-grid-banner-index-column-2">
             <p>Duvidas comuns</p>
-            <h1>fiz essa página só de duvidas comuns</h1>
+            <h1>Como iniciar na criação de uma API com Java</h1>
           </div>
         </div>
       </div>
     </header>
 
     <main class="container">
-      <h1>Maneiras de Iniciar um Projeto</h1>
       <p>
-        Existem várias maneiras de iniciar um projeto moderno de JavaScript.
-        Aqui estão alguns dos métodos mais comuns:
+        Criar uma API com Java pode ser uma experiência gratificante,
+        especialmente se você estiver interessado em desenvolver aplicações
+        robustas e escaláveis. Java oferece várias ferramentas e frameworks que
+        facilitam o processo de criação de APIs. Neste guia, abordaremos os
+        passos fundamentais para desenvolver uma API utilizando o Spring Boot,
+        um dos frameworks mais populares para essa finalidade.
       </p>
 
-      <h2>1. Usando Vite</h2>
+      <h2>O que é uma API?</h2>
       <p>
-        Vite é uma ferramenta de build que visa fornecer um ambiente de
-        desenvolvimento mais rápido e enxuto para projetos modernos de
-        front-end. Para criar um projeto com Vite, siga os passos abaixo:
+        Uma API (Interface de Programação de Aplicações) permite que diferentes
+        sistemas se comuniquem entre si. APIs RESTful, em particular, são
+        projetadas para funcionar com o protocolo HTTP e são frequentemente
+        usadas em aplicações web. O uso de Java e Spring Boot permite que você
+        crie APIs de forma rápida e eficiente.
       </p>
-      <pre><code>// 1. Instale o Vite globalmente (opcional)
-npm install -g create-vite
 
-// 2. Crie um novo projeto
-npm create vite@latest
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Instale as dependências
-npm install
-
-// 5. Inicie o servidor de desenvolvimento
-npm run dev
-      </code></pre>
-
-      <h2>2. Usando Create React App</h2>
+      <h2>Configuração do ambiente</h2>
       <p>
-        Create React App é uma ferramenta oficial do React para criar um novo
-        projeto com uma configuração inicial pronta. Siga os passos abaixo para
-        criar um projeto com Create React App:
+        Para iniciar, você precisa ter o Java Development Kit (JDK) instalado,
+        bem como um ambiente de desenvolvimento integrado (IDE) como o IntelliJ
+        IDEA ou Eclipse. Também é recomendável usar o Maven ou Gradle para
+        gerenciar suas dependências.
       </p>
-      <pre><code>// 1. Crie um novo projeto usando Create React App
-npx create-react-app nome-do-seu-projeto
 
-// 2. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 3. Inicie o servidor de desenvolvimento
-npm start
-      </code></pre>
-
-      <h2>3. Usando Next.js</h2>
+      <h2>Passo a passo para criar uma API com Spring Boot</h2>
       <p>
-        Next.js é um framework para React que permite renderização do lado do
-        servidor e geração de sites estáticos. Para iniciar um projeto com
-        Next.js, siga os passos abaixo:
+        Aqui está um exemplo básico de como criar uma API simples usando Spring
+        Boot:
       </p>
-      <pre><code>// 1. Crie um novo projeto usando o template Next.js
-npx create-next-app@latest nome-do-seu-projeto
 
-// 2. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
+      <ol>
+        <li>
+          <strong>Crie um novo projeto Spring Boot:</strong>
+          Você pode usar o Spring Initializr (https://start.spring.io/) para
+          criar um novo projeto. Selecione as dependências
+          <code>Spring Web</code> e <code>Spring Data JPA</code>.
 
-// 3. Inicie o servidor de desenvolvimento
-npm run dev
-      </code></pre>
+          <pre><code>
+            // Exemplo de arquivo pom.xml
+            &lt;dependencies&gt;
+                &lt;dependency&gt;
+                    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+                    &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;
+                &lt;/dependency&gt;
+                &lt;dependency&gt;
+                    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+                    &lt;artifactId&gt;spring-boot-starter-data-jpa&lt;/artifactId&gt;
+                &lt;/dependency&gt;
+                &lt;dependency&gt;
+                    &lt;groupId&gt;com.h2database&lt;/groupId&gt;
+                    &lt;artifactId&gt;h2&lt;/artifactId&gt;
+                    &lt;scope&gt;runtime&lt;/scope&gt;
+                &lt;/dependency&gt;
+            &lt;/dependencies&gt;
+            </code></pre>
+        </li>
+        <li>
+          <strong>Crie um modelo:</strong>
+          Defina uma classe de modelo para representar os dados que sua API irá
+          manipular.
 
-      <h2>4. Usando Vue CLI</h2>
+          <pre><code>
+            import javax.persistence.Entity;
+            import javax.persistence.GeneratedValue;
+            import javax.persistence.GenerationType;
+            import javax.persistence.Id;
+      
+            @Entity
+            public class Produto {
+                @Id
+                @GeneratedValue(strategy = GenerationType.IDENTITY)
+                private Long id;
+                private String nome;
+                private Double preco;
+      
+                // Getters e Setters
+            }
+            </code></pre>
+        </li>
+        <li>
+          <strong>Crie um repositório:</strong>
+          O repositório será responsável por interagir com a base de dados.
+
+          <pre><code>
+            import org.springframework.data.jpa.repository.JpaRepository;
+      
+            public interface ProdutoRepository extends JpaRepository&lt;Produto, Long&gt; {
+            }
+            </code></pre>
+        </li>
+        <li>
+          <strong>Crie um controlador:</strong>
+          O controlador irá gerenciar as requisições HTTP e interagir com o
+          repositório.
+
+          <pre><code>
+            import org.springframework.beans.factory.annotation.Autowired;
+            import org.springframework.web.bind.annotation.*;
+      
+            import java.util.List;
+      
+            @RestController
+            @RequestMapping("/api/produtos")
+            public class ProdutoController {
+                @Autowired
+                private ProdutoRepository produtoRepository;
+      
+                @GetMapping
+                public List&lt;Produto&gt; listar() {
+                    return produtoRepository.findAll();
+                }
+      
+                @PostMapping
+                public Produto adicionar(@RequestBody Produto produto) {
+                    return produtoRepository.save(produto);
+                }
+            }
+            </code></pre>
+        </li>
+        <li>
+          <strong>Execute sua aplicação:</strong>
+          Agora você pode executar sua aplicação Spring Boot. Use o comando
+          <code>mvn spring-boot:run</code> e sua API estará disponível em
+          <code>http://localhost:8080/api/produtos</code>.
+        </li>
+      </ol>
+
+      <h2>Conclusão</h2>
       <p>
-        Vue CLI é uma ferramenta oficial para scaffolding de projetos Vue.js.
-        Para criar um projeto com Vue CLI, siga os passos abaixo:
+        Criar uma API com Java e Spring Boot é um processo simples e eficaz. Com
+        a prática, você poderá adicionar funcionalidades mais complexas, como
+        autenticação, validação de dados e integração com serviços externos.
+        Continue explorando a documentação do Spring para aprender mais sobre as
+        capacidades do framework e como usá-lo para construir APIs robustas.
       </p>
-      <pre><code>// 1. Instale Vue CLI globalmente
-npm install -g @vue/cli
-
-// 2. Crie um novo projeto
-vue create nome-do-seu-projeto
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Inicie o servidor de desenvolvimento
-npm run serve
-      </code></pre>
-
-      <h2>5. Usando Angular CLI</h2>
-      <p>
-        Angular CLI é uma ferramenta oficial para criar e gerenciar projetos
-        Angular. Para criar um projeto com Angular CLI, siga os passos abaixo:
-      </p>
-      <pre><code>// 1. Instale Angular CLI globalmente
-npm install -g @angular/cli
-
-// 2. Crie um novo projeto
-ng new nome-do-seu-projeto
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Inicie o servidor de desenvolvimento
-ng serve
-      </code></pre>
     </main>
 
     <footer class="cursor-bgblack">

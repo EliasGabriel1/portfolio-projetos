@@ -120,33 +120,12 @@
       rel="stylesheet"
       href="../../../../assets/css/tympanuscss/buttonhovers.css"
     />
-    <link
-      rel="stylesheet"
-      href="../../../../assets/css/tympanuscss/linehovers.css"
-    />
+    <link rel="stylesheet" href="../../../../assets/css/tympanuscss/linehovers.css" />
     <link
       rel="shortcut icon"
       type="image/x-icon"
       href="../../../../assets/icon/favicon.ico"
     />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-      }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-      pre {
-        background-color: #f4f4f4;
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        overflow-x: auto;
-      }
-    </style>
     <title>Elias Gabe || gabe ajuda (ou tenta)</title>
   </head>
 
@@ -302,109 +281,87 @@
         <div class="d-grid-banner-index">
           <div class="d-grid-banner-index-column-2">
             <p>Duvidas comuns</p>
-            <h1>fiz essa página só de duvidas comuns</h1>
+            <h1>Como Configurar o Visual Studio Code</h1>
           </div>
         </div>
       </div>
     </header>
 
+      
     <main class="container">
-      <h1>Maneiras de Iniciar um Projeto</h1>
+      <h1>Como Configurar o Visual Studio Code</h1>
       <p>
-        Existem várias maneiras de iniciar um projeto moderno de JavaScript.
-        Aqui estão alguns dos métodos mais comuns:
+        O Visual Studio Code (VSCode) é um dos editores de código mais populares entre desenvolvedores. Ele é leve, flexível e possui uma vasta gama de extensões que podem ajudar a aumentar a produtividade. Nesta página, você encontrará um guia passo a passo sobre como configurar o VSCode para suas necessidades de desenvolvimento.
       </p>
-
-      <h2>1. Usando Vite</h2>
+    
+      <h2>1. Instalação do VSCode</h2>
       <p>
-        Vite é uma ferramenta de build que visa fornecer um ambiente de
-        desenvolvimento mais rápido e enxuto para projetos modernos de
-        front-end. Para criar um projeto com Vite, siga os passos abaixo:
+        Primeiro, você precisa baixar e instalar o VSCode. Acesse o site oficial e faça o download da versão adequada para o seu sistema operacional:
+        <a href="https://code.visualstudio.com/">Baixar VSCode</a>.
       </p>
-      <pre><code>// 1. Instale o Vite globalmente (opcional)
-npm install -g create-vite
-
-// 2. Crie um novo projeto
-npm create vite@latest
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Instale as dependências
-npm install
-
-// 5. Inicie o servidor de desenvolvimento
-npm run dev
-      </code></pre>
-
-      <h2>2. Usando Create React App</h2>
+    
+      <h2>2. Estrutura Básica da Interface</h2>
       <p>
-        Create React App é uma ferramenta oficial do React para criar um novo
-        projeto com uma configuração inicial pronta. Siga os passos abaixo para
-        criar um projeto com Create React App:
+        Após a instalação, ao abrir o VSCode, você verá a interface que inclui:
       </p>
-      <pre><code>// 1. Crie um novo projeto usando Create React App
-npx create-react-app nome-do-seu-projeto
-
-// 2. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 3. Inicie o servidor de desenvolvimento
-npm start
-      </code></pre>
-
-      <h2>3. Usando Next.js</h2>
+      <ul>
+        <li><strong>Barra Lateral:</strong> Para navegação entre arquivos e acesso a extensões.</li>
+        <li><strong>Editor:</strong> Onde você escreve seu código.</li>
+        <li><strong>Terminal Integrado:</strong> Permite executar comandos sem sair do editor.</li>
+        <li><strong>Status Bar:</strong> Mostra informações sobre o arquivo e o projeto.</li>
+      </ul>
+    
+      <h2>3. Configurando Preferências Pessoais</h2>
       <p>
-        Next.js é um framework para React que permite renderização do lado do
-        servidor e geração de sites estáticos. Para iniciar um projeto com
-        Next.js, siga os passos abaixo:
+        Para personalizar o VSCode, você pode acessar as configurações através do menu <strong>File &gt; Preferences &gt; Settings</strong> ou usando o atalho <code>Ctrl + ,</code>. Aqui estão algumas configurações recomendadas:
       </p>
-      <pre><code>// 1. Crie um novo projeto usando o template Next.js
-npx create-next-app@latest nome-do-seu-projeto
-
-// 2. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 3. Inicie o servidor de desenvolvimento
-npm run dev
-      </code></pre>
-
-      <h2>4. Usando Vue CLI</h2>
+      <ul>
+        <li><strong>Tema:</strong> Escolha um tema claro ou escuro que você prefira.</li>
+        <li><strong>Fonte:</strong> Ajuste o tamanho da fonte para maior conforto visual.</li>
+        <li><strong>Auto-Save:</strong> Habilite a opção de salvar automaticamente seus arquivos.</li>
+      </ul>
+      
+      <h2>4. Instalando Extensões Úteis</h2>
       <p>
-        Vue CLI é uma ferramenta oficial para scaffolding de projetos Vue.js.
-        Para criar um projeto com Vue CLI, siga os passos abaixo:
+        As extensões permitem adicionar funcionalidades extras ao VSCode. Algumas extensões recomendadas incluem:
       </p>
-      <pre><code>// 1. Instale Vue CLI globalmente
-npm install -g @vue/cli
-
-// 2. Crie um novo projeto
-vue create nome-do-seu-projeto
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Inicie o servidor de desenvolvimento
-npm run serve
-      </code></pre>
-
-      <h2>5. Usando Angular CLI</h2>
+      <ul>
+        <li><strong>Prettier:</strong> Um formatador de código para manter seu código limpo e consistente.</li>
+        <li><strong>ESLint:</strong> Ajuda a encontrar e corrigir problemas em seu código JavaScript.</li>
+        <li><strong>Live Server:</strong> Permite visualizar suas páginas web em tempo real.</li>
+      </ul>
       <p>
-        Angular CLI é uma ferramenta oficial para criar e gerenciar projetos
-        Angular. Para criar um projeto com Angular CLI, siga os passos abaixo:
+        Para instalar extensões, vá até a aba de extensões na barra lateral (<strong>Ctrl + Shift + X</strong>), busque pelo nome da extensão e clique em "Instalar".
       </p>
-      <pre><code>// 1. Instale Angular CLI globalmente
-npm install -g @angular/cli
-
-// 2. Crie um novo projeto
-ng new nome-do-seu-projeto
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Inicie o servidor de desenvolvimento
-ng serve
-      </code></pre>
+    
+      <h2>5. Configurando o Terminal Integrado</h2>
+      <p>
+        O terminal integrado do VSCode é uma ferramenta poderosa. Para abri-lo, você pode usar o atalho <code>Ctrl + `</code>. Aqui estão algumas configurações que podem melhorar sua experiência:
+      </p>
+      <ul>
+        <li><strong>Escolha o Shell:</strong> Você pode escolher entre diferentes shells (cmd, PowerShell, bash, etc.) nas configurações do terminal.</li>
+        <li><strong>Divisão do Terminal:</strong> Permite abrir múltiplas instâncias do terminal lado a lado.</li>
+      </ul>
+    
+      <h2>6. Dicas para Melhorar sua Produtividade</h2>
+      <ol>
+        <li>
+          <strong>Atalhos de Teclado:</strong> Aprenda e utilize os atalhos de teclado para navegar e editar seu código mais rapidamente. Você pode acessar a lista de atalhos em <strong>File &gt; Preferences &gt; Keyboard Shortcuts</strong>.
+        </li>
+        <li>
+          <strong>IntelliSense:</strong> Aproveite o IntelliSense, que oferece autocompletar e sugestões de código conforme você digita.
+        </li>
+        <li>
+          <strong>Snippets:</strong> Crie snippets personalizados para reutilizar trechos de código frequentemente usados.
+        </li>
+      </ol>
+    
+      <h2>7. Conclusão</h2>
+      <p>
+        Configurar o VSCode pode aumentar significativamente sua produtividade como desenvolvedor. Experimente as diferentes configurações e extensões até encontrar a combinação que melhor se adapta ao seu fluxo de trabalho. Para mais dicas e truques, consulte a documentação oficial do <a href="https://code.visualstudio.com/docs">VSCode</a>.
+      </p>
     </main>
+    
 
     <footer class="cursor-bgblack">
       <div class="footer-header container flex-space-between">

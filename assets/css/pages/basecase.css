@@ -19,6 +19,10 @@ svg:not(.logo){
     color: var( --color-header);
 }
 
+ul li ul{
+    margin-left: 20px;
+}
+
 .d-grid-banner-index-column-1>ul {
     max-width: 146px;
 }
@@ -86,6 +90,7 @@ svg:not(.logo){
     color: #868E96;
     margin-right: 61.43px;
 }
+
 
 .double-column-lp p {
     font-weight: 400;

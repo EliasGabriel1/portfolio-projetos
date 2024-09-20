@@ -129,24 +129,6 @@
       type="image/x-icon"
       href="../../../../assets/icon/favicon.ico"
     />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-      }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-      pre {
-        background-color: #f4f4f4;
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        overflow-x: auto;
-      }
-    </style>
     <title>Elias Gabe || gabe ajuda (ou tenta)</title>
   </head>
 
@@ -163,7 +145,7 @@
             class="container container__header"
             style="display: flex; justify-content: space-between"
           >
-          <a href="../../index.html">
+            <a href="../Projetos.html">
               <svg
                 class="logo"
                 width="111"
@@ -302,108 +284,90 @@
         <div class="d-grid-banner-index">
           <div class="d-grid-banner-index-column-2">
             <p>Duvidas comuns</p>
-            <h1>fiz essa página só de duvidas comuns</h1>
+            <h1>Trilha para o Básico</h1>
           </div>
         </div>
       </div>
     </header>
 
     <main class="container">
-      <h1>Maneiras de Iniciar um Projeto</h1>
+      <h1>Como iniciar no Express.js</h1>
       <p>
-        Existem várias maneiras de iniciar um projeto moderno de JavaScript.
-        Aqui estão alguns dos métodos mais comuns:
+        Express.js é um framework minimalista e flexível para Node.js, que
+        facilita o desenvolvimento de aplicações web e APIs. Ele abstrai muitas
+        das funcionalidades do Node.js, permitindo que desenvolvedores construam
+        servidores de forma rápida e eficiente. Se você está desenvolvendo uma
+        API ou uma aplicação web com Node.js, o Express é uma escolha popular
+        por sua simplicidade e robustez.
       </p>
 
-      <h2>1. Usando Vite</h2>
+      <h2>Por que usar o Express.js?</h2>
       <p>
-        Vite é uma ferramenta de build que visa fornecer um ambiente de
-        desenvolvimento mais rápido e enxuto para projetos modernos de
-        front-end. Para criar um projeto com Vite, siga os passos abaixo:
+        O Express.js oferece uma forma simplificada de lidar com rotas,
+        requisições HTTP e middleware, permitindo que você foque na lógica da
+        sua aplicação. Aqui estão os principais benefícios:
       </p>
-      <pre><code>// 1. Instale o Vite globalmente (opcional)
-npm install -g create-vite
+      <ol>
+        <li>
+          <strong>Facilidade de uso:</strong> O Express é fácil de configurar e
+          começar a usar. Ele fornece métodos simples para definir rotas e
+          gerenciar requisições.
+        </li>
+        <li>
+          <strong>Middleware:</strong> O Express faz uso extensivo de
+          middleware, que são funções executadas em sequência em resposta às
+          requisições. Isso facilita a adição de funcionalidades como
+          autenticação, logging, entre outras.
+        </li>
+        <li>
+          <strong>Flexibilidade:</strong> Embora seja minimalista, o Express
+          permite a inclusão de pacotes adicionais para adicionar
+          funcionalidades conforme necessário, sem complicar a estrutura do
+          projeto.
+        </li>
+      </ol>
 
-// 2. Crie um novo projeto
-npm create vite@latest
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Instale as dependências
-npm install
-
-// 5. Inicie o servidor de desenvolvimento
-npm run dev
-      </code></pre>
-
-      <h2>2. Usando Create React App</h2>
+      <h2>Exemplo prático de uso do Express</h2>
       <p>
-        Create React App é uma ferramenta oficial do React para criar um novo
-        projeto com uma configuração inicial pronta. Siga os passos abaixo para
-        criar um projeto com Create React App:
+        Vamos criar um servidor básico utilizando o Express.js. Siga os passos
+        abaixo:
       </p>
-      <pre><code>// 1. Crie um novo projeto usando Create React App
-npx create-react-app nome-do-seu-projeto
-
-// 2. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 3. Inicie o servidor de desenvolvimento
-npm start
-      </code></pre>
-
-      <h2>3. Usando Next.js</h2>
-      <p>
-        Next.js é um framework para React que permite renderização do lado do
-        servidor e geração de sites estáticos. Para iniciar um projeto com
-        Next.js, siga os passos abaixo:
-      </p>
-      <pre><code>// 1. Crie um novo projeto usando o template Next.js
-npx create-next-app@latest nome-do-seu-projeto
-
-// 2. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 3. Inicie o servidor de desenvolvimento
-npm run dev
-      </code></pre>
-
-      <h2>4. Usando Vue CLI</h2>
-      <p>
-        Vue CLI é uma ferramenta oficial para scaffolding de projetos Vue.js.
-        Para criar um projeto com Vue CLI, siga os passos abaixo:
-      </p>
-      <pre><code>// 1. Instale Vue CLI globalmente
-npm install -g @vue/cli
-
-// 2. Crie um novo projeto
-vue create nome-do-seu-projeto
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Inicie o servidor de desenvolvimento
-npm run serve
-      </code></pre>
-
-      <h2>5. Usando Angular CLI</h2>
-      <p>
-        Angular CLI é uma ferramenta oficial para criar e gerenciar projetos
-        Angular. Para criar um projeto com Angular CLI, siga os passos abaixo:
-      </p>
-      <pre><code>// 1. Instale Angular CLI globalmente
-npm install -g @angular/cli
-
-// 2. Crie um novo projeto
-ng new nome-do-seu-projeto
-
-// 3. Navegue até a pasta do projeto
-cd nome-do-seu-projeto
-
-// 4. Inicie o servidor de desenvolvimento
-ng serve
-      </code></pre>
+      <ol>
+        <li>
+          <strong>Instalar o Express:</strong>
+          Certifique-se de que você tenha um projeto Node.js configurado. Em
+          seguida, instale o Express:
+          <pre><code>npm install express</code></pre>
+        </li>
+        <li>
+          <strong>Criar um servidor básico:</strong>
+          Depois de instalar o Express, você pode criar um servidor simples que
+          responde a requisições HTTP. Crie um arquivo <code>app.js</code> e
+          adicione o seguinte código:
+          <pre><code>
+      const express = require('express');
+      const app = express();
+      const port = 3000;
+      
+      app.get('/', (req, res) => {
+        res.send('Olá, mundo!');
+      });
+      
+      app.listen(port, () => {
+        console.log(`Servidor rodando em http://localhost:${port}`);
+      });
+            </code></pre>
+          Esse código define uma rota na raiz ('/') que responde com a mensagem
+          "Olá, mundo!" quando acessada no navegador.
+        </li>
+        <li>
+          <strong>Executar o servidor:</strong>
+          Para iniciar o servidor, basta rodar o comando
+          <code>node app.js</code> no terminal. Agora, você pode acessar
+          <code>http://localhost:3000</code> no navegador e verá a mensagem
+          "Olá, mundo!".
+        </li>
+      </ol>
     </main>
 
     <footer class="cursor-bgblack">
