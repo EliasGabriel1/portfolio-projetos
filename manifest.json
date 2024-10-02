@@ -2,7 +2,7 @@
   "name": "Elias Gabe Site",
   "short_name": "Site web",
   "start_url": "/?home=true",
-  "description": "Site Institucional do Elias Gabe",
+  "description": "Site Institucional do Elias Gabriel, Elias Gabe",
   "icons": [
     {
       "src": "./assets/icon/favicon.ico",
